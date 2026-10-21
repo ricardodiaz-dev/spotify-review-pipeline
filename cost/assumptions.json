@@ -1,0 +1,26 @@
+{
+  "spend_limit_usd": 25.0,
+  "max_output_tokens": 4000,
+  "max_workers": 32,
+  "batch_size": 50,
+  "verify_sample": 1000,
+  "fallback": {
+    "model": "claude-sonnet-5",
+    "max_fraction": 0.01,
+    "note": "No fallback is configured in the run (fraction 0). The conservative scenario prices a declared 1% cap to show its budget effect."
+  },
+  "scenarios": {
+    "base": {
+      "retry_rate": 0.02,
+      "fallback_fraction": 0.0,
+      "fixed_overhead_multiplier": 3,
+      "parallel_efficiency": 0.7
+    },
+    "conservative": {
+      "retry_rate": 0.1,
+      "fallback_fraction": 0.01,
+      "fixed_overhead_multiplier": 6,
+      "parallel_efficiency": 0.4
+    }
+  }
+}

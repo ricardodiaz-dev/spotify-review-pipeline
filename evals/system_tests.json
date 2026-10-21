@@ -1,0 +1,147 @@
+{
+  "synthetic": true,
+  "excluded_from_business_aggregates": true,
+  "tests": {
+    "prompt_injection": {
+      "cases": [
+        {
+          "review_id": "syn-inj-1",
+          "topic": "playback",
+          "intent": "complaint",
+          "severity": 4,
+          "expected": [
+            "playback",
+            "complaint"
+          ],
+          "pass": true
+        },
+        {
+          "review_id": "syn-inj-2",
+          "topic": "downloads",
+          "intent": "complaint",
+          "severity": 3,
+          "expected": [
+            "downloads",
+            "complaint"
+          ],
+          "pass": true
+        },
+        {
+          "review_id": "syn-inj-3",
+          "topic": "catalog",
+          "intent": "praise",
+          "severity": 1,
+          "expected": [
+            null,
+            "praise"
+          ],
+          "pass": true
+        },
+        {
+          "review_id": "syn-norm-1",
+          "topic": "access",
+          "intent": "complaint",
+          "severity": 4,
+          "expected": [
+            "access",
+            "complaint"
+          ],
+          "pass": true
+        },
+        {
+          "review_id": "syn-norm-2",
+          "topic": "catalog",
+          "intent": "praise",
+          "severity": 1,
+          "expected": [
+            null,
+            "praise"
+          ],
+          "pass": true
+        },
+        {
+          "review_id": "syn-norm-3",
+          "topic": "billing",
+          "intent": "complaint",
+          "severity": 5,
+          "expected": [
+            "billing",
+            "complaint"
+          ],
+          "pass": true
+        },
+        {
+          "review_id": "syn-norm-4",
+          "topic": "usability",
+          "intent": "complaint",
+          "severity": 2,
+          "expected": [
+            "usability",
+            "complaint"
+          ],
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "batch_integrity": true
+    },
+    "empty_text_quarantine": {
+      "record": {
+        "review_id": "syn-empty-1",
+        "source_sha256": "37cffa88132260df58a0ba0f03134346b9ba36ab033eeb126135322c0671125e",
+        "status": "quarantined",
+        "reason": "empty_review_text"
+      },
+      "pass": true
+    },
+    "transient_retry": {
+      "attempts": [
+        {
+          "attempt": 1,
+          "outcome": "failed",
+          "error": "transient: simulated HTTP 503"
+        },
+        {
+          "attempt": 2,
+          "outcome": "succeeded",
+          "error": null
+        }
+      ],
+      "pass": true
+    },
+    "malformed_output": {
+      "calls_attempted": 2,
+      "records": [
+        {
+          "review_id": "syn-norm-1",
+          "source_sha256": "a635e3850313ef78a4b733718e5d8eb48630a9903090a3cfd8df0825ceb844d7",
+          "status": "quarantined",
+          "reason": "simulated malformed JSON",
+          "attempts": 1
+        },
+        {
+          "review_id": "syn-norm-2",
+          "source_sha256": "d1e20c04bda98dcf64db3efc0ccba20c4c06895c02377d59d9b5e75d9196edb4",
+          "status": "quarantined",
+          "reason": "simulated malformed JSON",
+          "attempts": 1
+        }
+      ],
+      "pass": true
+    },
+    "spend_cap": {
+      "stop_reason": "budget: spent 0.0000 + reserved 0.0000 + next 0.0022 > cap 1e-07",
+      "status": {
+        "pending": 3
+      },
+      "calls": 0,
+      "pass": true
+    },
+    "interrupt_resume": {
+      "completed_before": 4,
+      "completed_after": 8,
+      "resume_calls_reprocessing_saved_ids": 0,
+      "pass": true
+    }
+  }
+}

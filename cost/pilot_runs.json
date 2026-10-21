@@ -1,0 +1,33 @@
+{
+  "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+  "checksum_ok": true,
+  "workers": 1,
+  "cold": {
+    "wall_s": 64.734,
+    "stage_seconds": {
+      "ingest": 0.159,
+      "enrich": 29.148,
+      "verify": 5.45,
+      "group": 14.503,
+      "rank": 0.157,
+      "memo": 15.316
+    },
+    "calls": 5,
+    "cache_hits": 0
+  },
+  "warm": {
+    "wall_s": 1.035,
+    "stage_seconds": {
+      "ingest": 0.147,
+      "enrich": 0.206,
+      "verify": 0.195,
+      "group": 0.182,
+      "rank": 0.119,
+      "memo": 0.186
+    },
+    "calls": 0,
+    "cache_hits": 100
+  },
+  "unique_texts": 100,
+  "ids": 100
+}

@@ -1,0 +1,35 @@
+{"distinct": 100, "elapsed_s": 0.02, "empty": 0, "records": 100, "stage": "ingest", "ts": "2026-10-20T15:56:11-0700"}
+{"elapsed_s": 0.039, "name": "ingest", "stage": "stage_time", "ts": "2026-10-20T15:56:11-0700"}
+{"elapsed_s": 0.039, "stage": "invocation", "stages": ["ingest"], "ts": "2026-10-20T15:56:11-0700"}
+{"batches": 2, "cap": 25.0, "label_config": "gpt-6-luna+effort-none+enrich-v1+schema-v1", "pending": 100, "phase": "initial", "spent": 0.0, "stage": "enrich_start", "ts": "2026-10-20T15:56:12-0700", "workers": 1}
+{"batches": 2, "elapsed_s": 28.74, "phase": "initial", "spent_usd": 0.0021078850000000003, "stage": "enrich_end", "stop_reason": null, "ts": "2026-10-20T15:56:41-0700", "work_status": {"completed": 100}}
+{"elapsed_s": 29.014, "name": "enrich", "stage": "stage_time", "ts": "2026-10-20T15:56:41-0700"}
+{"elapsed_s": 29.014, "stage": "invocation", "stages": ["enrich"], "ts": "2026-10-20T15:56:41-0700"}
+{"all_three_agree": 0.75, "compared": 20, "disagreements": 5, "elapsed_s": 4.52, "intent_agreement": 1.0, "sample_seed": "verify-seed-2026-10-20", "sample_size": 20, "sampled_from": "completed distinct texts", "severity_exact": 0.9, "severity_mae": 0.1, "severity_within_1": 1.0, "spent_usd": 0.000327, "stage": "verify", "topic_agreement": 0.85, "ts": "2026-10-20T15:56:46-0700"}
+{"elapsed_s": 4.637, "name": "verify", "stage": "stage_time", "ts": "2026-10-20T15:56:46-0700"}
+{"elapsed_s": 4.637, "stage": "invocation", "stages": ["verify"], "ts": "2026-10-20T15:56:46-0700"}
+{"issues": 18, "members": 52, "request_id": "resp_0afb3a190c644ef7016ad7f1af4a0887d0a2d9da76f8e858bb", "stage": "group", "ts": "2026-10-20T15:57:01-0700"}
+{"elapsed_s": 14.154, "name": "group", "stage": "stage_time", "ts": "2026-10-20T15:57:01-0700"}
+{"elapsed_s": 14.154, "stage": "invocation", "stages": ["group"], "ts": "2026-10-20T15:57:01-0700"}
+{"issues": 18, "stage": "rank", "top": ["ISS-billing-free_tier_restrictions", "ISS-other-general_negative", "ISS-usability-ads_interruptions", "ISS-usability-controls_shuffle_skip", "ISS-access-login_failure"], "ts": "2026-10-20T15:57:01-0700"}
+{"elapsed_s": 0.023, "name": "rank", "stage": "stage_time", "ts": "2026-10-20T15:57:01-0700"}
+{"elapsed_s": 0.024, "stage": "invocation", "stages": ["rank"], "ts": "2026-10-20T15:57:01-0700"}
+{"cited": 10, "problems": [], "stage": "memo", "status": "pass", "ts": "2026-10-20T15:57:16-0700"}
+{"elapsed_s": 15.196, "name": "memo", "stage": "stage_time", "ts": "2026-10-20T15:57:16-0700"}
+{"elapsed_s": 15.197, "stage": "invocation", "stages": ["memo"], "ts": "2026-10-20T15:57:16-0700"}
+{"elapsed_s": 0.015, "name": "ingest", "stage": "stage_time", "ts": "2026-10-20T15:57:16-0700"}
+{"elapsed_s": 0.015, "stage": "invocation", "stages": ["ingest"], "ts": "2026-10-20T15:57:16-0700"}
+{"batches": 0, "cap": 25.0, "label_config": "gpt-6-luna+effort-none+enrich-v1+schema-v1", "pending": 0, "phase": "resume", "spent": 0.0021078850000000003, "stage": "enrich_start", "ts": "2026-10-20T15:57:16-0700", "workers": 1}
+{"batches": 0, "elapsed_s": 0.0, "phase": "resume", "spent_usd": 0.0021078850000000003, "stage": "enrich_end", "stop_reason": null, "ts": "2026-10-20T15:57:16-0700", "work_status": {"completed": 100}}
+{"elapsed_s": 0.102, "name": "enrich", "stage": "stage_time", "ts": "2026-10-20T15:57:16-0700"}
+{"elapsed_s": 0.103, "stage": "invocation", "stages": ["enrich"], "ts": "2026-10-20T15:57:16-0700"}
+{"all_three_agree": 0.75, "compared": 20, "disagreements": 5, "elapsed_s": 0.01, "intent_agreement": 1.0, "sample_seed": "verify-seed-2026-10-20", "sample_size": 20, "sampled_from": "completed distinct texts", "severity_exact": 0.9, "severity_mae": 0.1, "severity_within_1": 1.0, "spent_usd": 0.0, "stage": "verify", "topic_agreement": 0.85, "ts": "2026-10-20T15:57:17-0700"}
+{"elapsed_s": 0.084, "name": "verify", "stage": "stage_time", "ts": "2026-10-20T15:57:17-0700"}
+{"elapsed_s": 0.084, "stage": "invocation", "stages": ["verify"], "ts": "2026-10-20T15:57:17-0700"}
+{"elapsed_s": 0.079, "name": "group", "stage": "stage_time", "ts": "2026-10-20T15:57:17-0700"}
+{"elapsed_s": 0.08, "stage": "invocation", "stages": ["group"], "ts": "2026-10-20T15:57:17-0700"}
+{"issues": 18, "stage": "rank", "top": ["ISS-billing-free_tier_restrictions", "ISS-other-general_negative", "ISS-usability-ads_interruptions", "ISS-usability-controls_shuffle_skip", "ISS-access-login_failure"], "ts": "2026-10-20T15:57:17-0700"}
+{"elapsed_s": 0.02, "name": "rank", "stage": "stage_time", "ts": "2026-10-20T15:57:17-0700"}
+{"elapsed_s": 0.021, "stage": "invocation", "stages": ["rank"], "ts": "2026-10-20T15:57:17-0700"}
+{"elapsed_s": 0.081, "name": "memo", "stage": "stage_time", "ts": "2026-10-20T15:57:17-0700"}
+{"elapsed_s": 0.082, "stage": "invocation", "stages": ["memo"], "ts": "2026-10-20T15:57:17-0700"}

@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.DS_Store
+data/spotify_reviews_18months.csv
+data/dataset.zip
+state/
+local-reference.json
+self-check.json
+node_modules/
+.vercel
+cost/pilot_run_*.log
+*.log

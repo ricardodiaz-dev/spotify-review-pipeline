@@ -1,0 +1,86 @@
+{
+  "disagreements": [
+    {
+      "diffs": {
+        "topic": [
+          "billing",
+          "usability"
+        ]
+      },
+      "enrich_quote": "I just want to listen to one song but nooo I have to go through A HOLE PLAYLIST AND I CAN ONLY SKIP 6 OF THEM 6!!!",
+      "review_id": "ebc64fe2-9553-4528-87d5-cb4bb9783be6",
+      "text": "I just want to listen to one song but nooo I have to go through A HOLE PLAYLIST AND I CAN ONLY SKIP 6 OF THEM 6!!!"
+    },
+    {
+      "diffs": {
+        "severity": [
+          3,
+          2
+        ]
+      },
+      "enrich_quote": "It's nice but gospel music isn't much",
+      "review_id": "a1a28752-3256-4f81-b888-3e943343529f",
+      "text": "It's nice but gospel music isn't much"
+    },
+    {
+      "diffs": {
+        "topic": [
+          "other",
+          "support"
+        ]
+      },
+      "enrich_quote": "RUDE APP , THIS APP SUPPORT GUYS 🤮🤮🤮🤮🤮🤮🤮🤮🤮🤮. تطبيق سيء ، بدعم المثليين 🤮🤮🤮",
+      "review_id": "33526c6f-7a49-4b3d-bd20-d1bc191c494c",
+      "text": "RUDE APP , THIS APP SUPPORT GUYS 🤮🤮🤮🤮🤮🤮🤮🤮🤮🤮. تطبيق سيء ، بدعم المثليين 🤮🤮🤮"
+    },
+    {
+      "diffs": {
+        "topic": [
+          "billing",
+          "usability"
+        ]
+      },
+      "enrich_quote": "This app is killing it self and forcing you to pay premium for basic things like just listening to music.",
+      "review_id": "a78d831a-69f4-428a-9235-cfdd9775c509",
+      "text": "You can't even listen to music you want it just shuffles it, like what the hell? This app is killing it self and forcing you to pay premium for basic things like just listening to music."
+    },
+    {
+      "diffs": {
+        "severity": [
+          3,
+          2
+        ]
+      },
+      "enrich_quote": "I love Spotify recommendations music type before more than now. It was more songs and updated to newest song.",
+      "review_id": "1807cc68-ba99-4edc-b6f1-2a1478e69109",
+      "text": "I love Spotify recommendations music type before more than now. It was more songs and updated to newest song."
+    }
+  ],
+  "summary": {
+    "all_three_agree": 0.75,
+    "compared": 20,
+    "disagreements": 5,
+    "elapsed_s": 0.01,
+    "intent_agreement": 1.0,
+    "sample_seed": "verify-seed-2026-10-20",
+    "sample_size": 20,
+    "sampled_from": "completed distinct texts",
+    "severity_exact": 0.9,
+    "severity_mae": 0.1,
+    "severity_within_1": 1.0,
+    "spent_usd": 0.0,
+    "topic_agreement": 0.85,
+    "topic_confusions_top": [
+      {
+        "enrich": "billing",
+        "n": 2,
+        "verify": "usability"
+      },
+      {
+        "enrich": "other",
+        "n": 1,
+        "verify": "support"
+      }
+    ]
+  }
+}

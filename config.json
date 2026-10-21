@@ -1,0 +1,61 @@
+{
+  "provider": "openai",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "model_allowlist": [
+    "gpt-6-luna"
+  ],
+  "roles": {
+    "enrich": {
+      "model": "gpt-6-luna",
+      "effort": "none",
+      "prompt": "prompts/enrich_v1.md",
+      "prompt_version": "enrich-v1",
+      "schema_version": "schema-v1",
+      "batch_size": 50,
+      "max_output_tokens": 4000
+    },
+    "verify": {
+      "model": "gpt-6-luna",
+      "effort": "none",
+      "prompt": "prompts/verify_v1.md",
+      "prompt_version": "verify-v1",
+      "schema_version": "vschema-v1",
+      "batch_size": 25,
+      "max_output_tokens": 2000
+    },
+    "group": {
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "prompt": "prompts/group_v1.md",
+      "prompt_version": "group-v1",
+      "max_output_tokens": 6000
+    },
+    "memo": {
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "prompt": "prompts/memo_v1.md",
+      "prompt_version": "memo-v1",
+      "max_output_tokens": 6000
+    }
+  },
+  "limits": {
+    "spend_cap_usd": 25.0,
+    "max_workers": 8,
+    "transient_retries": 4,
+    "invalid_output_retries": 1,
+    "request_timeout_s": 120,
+    "fallback_fraction": 0.0
+  },
+  "prices_per_mtok": {
+    "gpt-6-luna": {
+      "input": 0.1,
+      "cached_input": 0.01,
+      "cache_write": 0.125,
+      "output": 0.5
+    }
+  },
+  "verification": {
+    "sample_size": 1000,
+    "seed": "verify-seed-2026-10-20"
+  }
+}

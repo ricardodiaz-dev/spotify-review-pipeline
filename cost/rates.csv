@@ -1,0 +1,7 @@
+model,item,price,per_units,unit,currency,tier,source,checked
+gpt-6-luna,input,0.10,1000000,tokens,USD,standard,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-20
+gpt-6-luna,cached_input,0.01,1000000,tokens,USD,standard,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-20
+gpt-6-luna,cache_write,0.125,1000000,tokens,USD,standard,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-20
+gpt-6-luna,output,0.50,1000000,tokens,USD,standard,https://developers.openai.com/api/docs/models/gpt-6-luna,2026-10-20
+claude-sonnet-5,input,2.00,1000000,tokens,USD,standard (hypothetical fallback; not used),https://www.anthropic.com/news/claude-sonnet-5 (as quoted in GRADING_CONTRACT.md),2026-10-20
+claude-sonnet-5,output,10.00,1000000,tokens,USD,standard (hypothetical fallback; not used),https://www.anthropic.com/news/claude-sonnet-5 (as quoted in GRADING_CONTRACT.md),2026-10-20
