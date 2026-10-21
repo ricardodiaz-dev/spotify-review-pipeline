@@ -64,7 +64,7 @@ cp .env.example .env        # fill OPENAI_API_KEY only for paid runs; DATABASE_U
 **No API key needed for these:**
 ```bash
 python3 cost/calculator.py                         # offline replay of the measured 100-review pilot + projections
-python3 run.py rank --state state/full             # regenerate ranking from saved records + membership (needs the state DB from the release)
+python3 run.py rank --state state/full             # needs release asset state_full.db.gz -> state/full/state.db and cp grading/membership.csv state/full/
 python3 scripts/rerank_from_grading.py             # regenerate ranking.csv from grading/records.jsonl.gz + membership.csv only
 python3 check_submission.py check --reference local-reference.json --submission grading --out self-check.json
 python3 evals/evaluate_golden.py --state state/full
