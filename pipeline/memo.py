@@ -18,7 +18,21 @@ TOP_ISSUES = 12
 EVIDENCE_ISSUES = 6
 EVIDENCE_PER_ISSUE = 3
 UUID = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}")
-REF = re.compile(r"\[(C\d{3}|A\d+)\]")
+REF_GROUP = re.compile(r"\[((?:C\d{3}|A\d+)(?:\s*,\s*(?:C\d{3}|A\d+))*)\]")
+
+
+class _Refs:
+    """Citations may be single ([C001]) or grouped ([A11, A16]); every id inside a group is checked."""
+    @staticmethod
+    def findall(text):
+        return [i.strip() for g in REF_GROUP.findall(text) for i in g.split(",")]
+
+    @staticmethod
+    def sub(repl, text):
+        return REF_GROUP.sub(repl, text)
+
+
+REF = _Refs()
 NUM = re.compile(r"(?<![\w-])\d[\d,]*(?:\.\d+)?%?")
 
 
@@ -60,6 +74,21 @@ def build_inputs(state_dir):
                            ("golden-50 intent agreement", f"{round(100 * g['intent_agreement'], 1)}%"),
                            ("golden-50 severity mean absolute error", str(g["severity_mae"]))):
             facts.append({"fact_id": f"A{k}", "fact": label, "display": val}); k += 1
+    # Trend facts: comparable full-month periods, complaint share of completed classifications, with denominators
+    areas_t = {"playback": ("playback", "downloads"), "usability": ("usability",), "billing/support": ("billing", "support"),
+               "access": ("access",)}
+    trend = {m["month"]: m for m in agg["monthly_trend"]}
+    for label, months in (("Aug-Oct 2022", ("2022-08", "2022-09", "2022-10")), ("Aug-Oct 2023", ("2023-08", "2023-09", "2023-10"))):
+        if all(m in trend for m in months):
+            den = sum(trend[m]["completed_records"] for m in months)
+            facts.append({"fact_id": f"A{k}", "fact": f"{label}: completed classified reviews (denominator)", "display": fmt_int(den)}); k += 1
+            for area, ts in areas_t.items():
+                num = sum(trend[m][f"{t}_complaints"] for m in months for t in ts)
+                facts.append({"fact_id": f"A{k}", "fact": f"{label}: '{area}' complaints as share of classified reviews ({fmt_int(num)} complaints)",
+                              "display": f"{round(100 * num / den, 1)}%"}); k += 1
+                facts.append({"fact_id": f"A{k}", "fact": f"{label}: '{area}' complaint count", "display": fmt_int(num)}); k += 1
+    last = sorted(trend)[-1]
+    facts.append({"fact_id": f"A{k}", "fact": f"note: {last} is a partial month and is excluded from the trend comparison", "display": "n/a"}); k += 1
     for a in agg["product_areas"]:
         share = round(100 * a["complaints"] / total_c, 1) if total_c else 0
         for label, val in (("complaints", fmt_int(a["complaints"])), ("share of all complaints", f"{share}%"),

@@ -1,0 +1,37 @@
+claim_id,issue_id,issue_name,metric,value,display
+C001,ISS-other-general_negative,General Negative Feedback,complaint_count,79391,"79,391"
+C002,ISS-other-general_negative,General Negative Feedback,mean_severity,1.988210,1.99
+C003,ISS-other-general_negative,General Negative Feedback,priority_score,157846,"157,846"
+C004,ISS-billing-free_tier_restrictions,Free-Tier Feature Restrictions,complaint_count,48031,"48,031"
+C005,ISS-billing-free_tier_restrictions,Free-Tier Feature Restrictions,mean_severity,2.928255,2.93
+C006,ISS-billing-free_tier_restrictions,Free-Tier Feature Restrictions,priority_score,140647,"140,647"
+C007,ISS-usability-ads_interruptions,Frequent Ad Interruptions,complaint_count,36257,"36,257"
+C008,ISS-usability-ads_interruptions,Frequent Ad Interruptions,mean_severity,2.131257,2.13
+C009,ISS-usability-ads_interruptions,Frequent Ad Interruptions,priority_score,77273,"77,273"
+C010,ISS-usability-controls_shuffle_skip,Shuffle and Playback Controls,complaint_count,14857,"14,857"
+C011,ISS-usability-controls_shuffle_skip,Shuffle and Playback Controls,mean_severity,2.967692,2.97
+C012,ISS-usability-controls_shuffle_skip,Shuffle and Playback Controls,priority_score,44091,"44,091"
+C013,ISS-playback-playback_stops_or_skips,Playback Stops or Skips,complaint_count,11812,"11,812"
+C014,ISS-playback-playback_stops_or_skips,Playback Stops or Skips,mean_severity,3.199712,3.20
+C015,ISS-playback-playback_stops_or_skips,Playback Stops or Skips,priority_score,37795,"37,795"
+C016,ISS-access-login_failure,Unable to Log In,complaint_count,7221,"7,221"
+C017,ISS-access-login_failure,Unable to Log In,mean_severity,3.951253,3.95
+C018,ISS-access-login_failure,Unable to Log In,priority_score,28532,"28,532"
+C019,ISS-playback-crash_or_wont_open,App Crashes or Won't Open,complaint_count,6868,"6,868"
+C020,ISS-playback-crash_or_wont_open,App Crashes or Won't Open,mean_severity,3.817123,3.82
+C021,ISS-playback-crash_or_wont_open,App Crashes or Won't Open,priority_score,26216,"26,216"
+C022,ISS-usability-queue_playlist_management,Queue and Playlist Management,complaint_count,8507,"8,507"
+C023,ISS-usability-queue_playlist_management,Queue and Playlist Management,mean_severity,3.007993,3.01
+C024,ISS-usability-queue_playlist_management,Queue and Playlist Management,priority_score,25589,"25,589"
+C025,ISS-usability-ui_layout_redesign,Unpopular Interface Redesigns,complaint_count,9984,"9,984"
+C026,ISS-usability-ui_layout_redesign,Unpopular Interface Redesigns,mean_severity,2.308193,2.31
+C027,ISS-usability-ui_layout_redesign,Unpopular Interface Redesigns,priority_score,23045,"23,045"
+C028,ISS-playback-playback_other,Other Playback Problems,complaint_count,6238,"6,238"
+C029,ISS-playback-playback_other,Other Playback Problems,mean_severity,3.407663,3.41
+C030,ISS-playback-playback_other,Other Playback Problems,priority_score,21257,"21,257"
+C031,ISS-catalog-missing_or_removed_content,Missing or Removed Music,complaint_count,6079,"6,079"
+C032,ISS-catalog-missing_or_removed_content,Missing or Removed Music,mean_severity,3.004442,3.00
+C033,ISS-catalog-missing_or_removed_content,Missing or Removed Music,priority_score,18264,"18,264"
+C034,ISS-catalog-lyrics,Lyrics Missing or Not Loading,complaint_count,5417,"5,417"
+C035,ISS-catalog-lyrics,Lyrics Missing or Not Loading,mean_severity,2.964925,2.96
+C036,ISS-catalog-lyrics,Lyrics Missing or Not Loading,priority_score,16061,"16,061"

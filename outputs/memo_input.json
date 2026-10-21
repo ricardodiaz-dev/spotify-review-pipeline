@@ -1,0 +1,762 @@
+{
+  "AREA_FACTS": [
+    {
+      "fact": "completed classified reviews",
+      "id": "A1",
+      "value": "660,555"
+    },
+    {
+      "fact": "complaint or cancellation reviews in issue groups",
+      "id": "A2",
+      "value": "293,810"
+    },
+    {
+      "fact": "reviews quarantined or unresolved (includes any empty texts)",
+      "id": "A3",
+      "value": "67"
+    },
+    {
+      "fact": "independent verifier sample size",
+      "id": "A4",
+      "value": "1,000"
+    },
+    {
+      "fact": "verifier topic agreement",
+      "id": "A5",
+      "value": "84.1%"
+    },
+    {
+      "fact": "verifier intent agreement",
+      "id": "A6",
+      "value": "91.4%"
+    },
+    {
+      "fact": "verifier severity exact agreement",
+      "id": "A7",
+      "value": "88.4%"
+    },
+    {
+      "fact": "golden-50 human-label topic agreement",
+      "id": "A8",
+      "value": "78.0%"
+    },
+    {
+      "fact": "golden-50 intent agreement",
+      "id": "A9",
+      "value": "98.0%"
+    },
+    {
+      "fact": "golden-50 severity mean absolute error",
+      "id": "A10",
+      "value": "0.24"
+    },
+    {
+      "fact": "Aug-Oct 2022: completed classified reviews (denominator)",
+      "id": "A11",
+      "value": "85,236"
+    },
+    {
+      "fact": "Aug-Oct 2022: 'playback' complaints as share of classified reviews (6,353 complaints)",
+      "id": "A12",
+      "value": "7.5%"
+    },
+    {
+      "fact": "Aug-Oct 2022: 'playback' complaint count",
+      "id": "A13",
+      "value": "6,353"
+    },
+    {
+      "fact": "Aug-Oct 2022: 'usability' complaints as share of classified reviews (9,460 complaints)",
+      "id": "A14",
+      "value": "11.1%"
+    },
+    {
+      "fact": "Aug-Oct 2022: 'usability' complaint count",
+      "id": "A15",
+      "value": "9,460"
+    },
+    {
+      "fact": "Aug-Oct 2022: 'billing/support' complaints as share of classified reviews (3,415 complaints)",
+      "id": "A16",
+      "value": "4.0%"
+    },
+    {
+      "fact": "Aug-Oct 2022: 'billing/support' complaint count",
+      "id": "A17",
+      "value": "3,415"
+    },
+    {
+      "fact": "Aug-Oct 2022: 'access' complaints as share of classified reviews (908 complaints)",
+      "id": "A18",
+      "value": "1.1%"
+    },
+    {
+      "fact": "Aug-Oct 2022: 'access' complaint count",
+      "id": "A19",
+      "value": "908"
+    },
+    {
+      "fact": "Aug-Oct 2023: completed classified reviews (denominator)",
+      "id": "A20",
+      "value": "161,173"
+    },
+    {
+      "fact": "Aug-Oct 2023: 'playback' complaints as share of classified reviews (8,291 complaints)",
+      "id": "A21",
+      "value": "5.1%"
+    },
+    {
+      "fact": "Aug-Oct 2023: 'playback' complaint count",
+      "id": "A22",
+      "value": "8,291"
+    },
+    {
+      "fact": "Aug-Oct 2023: 'usability' complaints as share of classified reviews (20,005 complaints)",
+      "id": "A23",
+      "value": "12.4%"
+    },
+    {
+      "fact": "Aug-Oct 2023: 'usability' complaint count",
+      "id": "A24",
+      "value": "20,005"
+    },
+    {
+      "fact": "Aug-Oct 2023: 'billing/support' complaints as share of classified reviews (34,414 complaints)",
+      "id": "A25",
+      "value": "21.4%"
+    },
+    {
+      "fact": "Aug-Oct 2023: 'billing/support' complaint count",
+      "id": "A26",
+      "value": "34,414"
+    },
+    {
+      "fact": "Aug-Oct 2023: 'access' complaints as share of classified reviews (3,170 complaints)",
+      "id": "A27",
+      "value": "2.0%"
+    },
+    {
+      "fact": "Aug-Oct 2023: 'access' complaint count",
+      "id": "A28",
+      "value": "3,170"
+    },
+    {
+      "fact": "note: 2023-11 is a partial month and is excluded from the trend comparison",
+      "id": "A29",
+      "value": "n/a"
+    },
+    {
+      "fact": "product area 'usability': complaints",
+      "id": "A30",
+      "value": "73,854"
+    },
+    {
+      "fact": "product area 'usability': share of all complaints",
+      "id": "A31",
+      "value": "25.1%"
+    },
+    {
+      "fact": "product area 'usability': severity sum (priority score)",
+      "id": "A32",
+      "value": "180,799"
+    },
+    {
+      "fact": "product area 'usability': mean severity",
+      "id": "A33",
+      "value": "2.45"
+    },
+    {
+      "fact": "product area 'usability': severity 4-5 complaints",
+      "id": "A34",
+      "value": "929"
+    },
+    {
+      "fact": "product area 'usability': cancellation-intent reviews",
+      "id": "A35",
+      "value": "7,214"
+    },
+    {
+      "fact": "product area 'billing/support': complaints",
+      "id": "A36",
+      "value": "61,034"
+    },
+    {
+      "fact": "product area 'billing/support': share of all complaints",
+      "id": "A37",
+      "value": "20.8%"
+    },
+    {
+      "fact": "product area 'billing/support': severity sum (priority score)",
+      "id": "A38",
+      "value": "173,862"
+    },
+    {
+      "fact": "product area 'billing/support': mean severity",
+      "id": "A39",
+      "value": "2.85"
+    },
+    {
+      "fact": "product area 'billing/support': severity 4-5 complaints",
+      "id": "A40",
+      "value": "2,347"
+    },
+    {
+      "fact": "product area 'billing/support': cancellation-intent reviews",
+      "id": "A41",
+      "value": "11,405"
+    },
+    {
+      "fact": "product area 'other': complaints",
+      "id": "A42",
+      "value": "82,828"
+    },
+    {
+      "fact": "product area 'other': share of all complaints",
+      "id": "A43",
+      "value": "28.2%"
+    },
+    {
+      "fact": "product area 'other': severity sum (priority score)",
+      "id": "A44",
+      "value": "163,806"
+    },
+    {
+      "fact": "product area 'other': mean severity",
+      "id": "A45",
+      "value": "1.98"
+    },
+    {
+      "fact": "product area 'other': severity 4-5 complaints",
+      "id": "A46",
+      "value": "375"
+    },
+    {
+      "fact": "product area 'other': cancellation-intent reviews",
+      "id": "A47",
+      "value": "8,256"
+    },
+    {
+      "fact": "product area 'playback': complaints",
+      "id": "A48",
+      "value": "45,694"
+    },
+    {
+      "fact": "product area 'playback': share of all complaints",
+      "id": "A49",
+      "value": "15.6%"
+    },
+    {
+      "fact": "product area 'playback': severity sum (priority score)",
+      "id": "A50",
+      "value": "151,374"
+    },
+    {
+      "fact": "product area 'playback': mean severity",
+      "id": "A51",
+      "value": "3.31"
+    },
+    {
+      "fact": "product area 'playback': severity 4-5 complaints",
+      "id": "A52",
+      "value": "15,691"
+    },
+    {
+      "fact": "product area 'playback': cancellation-intent reviews",
+      "id": "A53",
+      "value": "3,842"
+    },
+    {
+      "fact": "product area 'catalog': complaints",
+      "id": "A54",
+      "value": "20,488"
+    },
+    {
+      "fact": "product area 'catalog': share of all complaints",
+      "id": "A55",
+      "value": "7.0%"
+    },
+    {
+      "fact": "product area 'catalog': severity sum (priority score)",
+      "id": "A56",
+      "value": "60,443"
+    },
+    {
+      "fact": "product area 'catalog': mean severity",
+      "id": "A57",
+      "value": "2.95"
+    },
+    {
+      "fact": "product area 'catalog': severity 4-5 complaints",
+      "id": "A58",
+      "value": "754"
+    },
+    {
+      "fact": "product area 'catalog': cancellation-intent reviews",
+      "id": "A59",
+      "value": "1,432"
+    },
+    {
+      "fact": "product area 'access': complaints",
+      "id": "A60",
+      "value": "9,912"
+    },
+    {
+      "fact": "product area 'access': share of all complaints",
+      "id": "A61",
+      "value": "3.4%"
+    },
+    {
+      "fact": "product area 'access': severity sum (priority score)",
+      "id": "A62",
+      "value": "38,865"
+    },
+    {
+      "fact": "product area 'access': mean severity",
+      "id": "A63",
+      "value": "3.92"
+    },
+    {
+      "fact": "product area 'access': severity 4-5 complaints",
+      "id": "A64",
+      "value": "8,686"
+    },
+    {
+      "fact": "product area 'access': cancellation-intent reviews",
+      "id": "A65",
+      "value": "579"
+    }
+  ],
+  "CLAIMS": [
+    {
+      "claim_id": "C001",
+      "display": "79,391",
+      "issue_id": "ISS-other-general_negative",
+      "issue_name": "General Negative Feedback",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C002",
+      "display": "1.99",
+      "issue_id": "ISS-other-general_negative",
+      "issue_name": "General Negative Feedback",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C003",
+      "display": "157,846",
+      "issue_id": "ISS-other-general_negative",
+      "issue_name": "General Negative Feedback",
+      "metric": "priority_score"
+    },
+    {
+      "claim_id": "C004",
+      "display": "48,031",
+      "issue_id": "ISS-billing-free_tier_restrictions",
+      "issue_name": "Free-Tier Feature Restrictions",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C005",
+      "display": "2.93",
+      "issue_id": "ISS-billing-free_tier_restrictions",
+      "issue_name": "Free-Tier Feature Restrictions",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C006",
+      "display": "140,647",
+      "issue_id": "ISS-billing-free_tier_restrictions",
+      "issue_name": "Free-Tier Feature Restrictions",
+      "metric": "priority_score"
+    },
+    {
+      "claim_id": "C007",
+      "display": "36,257",
+      "issue_id": "ISS-usability-ads_interruptions",
+      "issue_name": "Frequent Ad Interruptions",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C008",
+      "display": "2.13",
+      "issue_id": "ISS-usability-ads_interruptions",
+      "issue_name": "Frequent Ad Interruptions",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C009",
+      "display": "77,273",
+      "issue_id": "ISS-usability-ads_interruptions",
+      "issue_name": "Frequent Ad Interruptions",
+      "metric": "priority_score"
+    },
+    {
+      "claim_id": "C010",
+      "display": "14,857",
+      "issue_id": "ISS-usability-controls_shuffle_skip",
+      "issue_name": "Shuffle and Playback Controls",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C011",
+      "display": "2.97",
+      "issue_id": "ISS-usability-controls_shuffle_skip",
+      "issue_name": "Shuffle and Playback Controls",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C012",
+      "display": "44,091",
+      "issue_id": "ISS-usability-controls_shuffle_skip",
+      "issue_name": "Shuffle and Playback Controls",
+      "metric": "priority_score"
+    },
+    {
+      "claim_id": "C013",
+      "display": "11,812",
+      "issue_id": "ISS-playback-playback_stops_or_skips",
+      "issue_name": "Playback Stops or Skips",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C014",
+      "display": "3.20",
+      "issue_id": "ISS-playback-playback_stops_or_skips",
+      "issue_name": "Playback Stops or Skips",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C015",
+      "display": "37,795",
+      "issue_id": "ISS-playback-playback_stops_or_skips",
+      "issue_name": "Playback Stops or Skips",
+      "metric": "priority_score"
+    },
+    {
+      "claim_id": "C016",
+      "display": "7,221",
+      "issue_id": "ISS-access-login_failure",
+      "issue_name": "Unable to Log In",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C017",
+      "display": "3.95",
+      "issue_id": "ISS-access-login_failure",
+      "issue_name": "Unable to Log In",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C018",
+      "display": "28,532",
+      "issue_id": "ISS-access-login_failure",
+      "issue_name": "Unable to Log In",
+      "metric": "priority_score"
+    },
+    {
+      "claim_id": "C019",
+      "display": "6,868",
+      "issue_id": "ISS-playback-crash_or_wont_open",
+      "issue_name": "App Crashes or Won't Open",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C020",
+      "display": "3.82",
+      "issue_id": "ISS-playback-crash_or_wont_open",
+      "issue_name": "App Crashes or Won't Open",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C021",
+      "display": "26,216",
+      "issue_id": "ISS-playback-crash_or_wont_open",
+      "issue_name": "App Crashes or Won't Open",
+      "metric": "priority_score"
+    },
+    {
+      "claim_id": "C022",
+      "display": "8,507",
+      "issue_id": "ISS-usability-queue_playlist_management",
+      "issue_name": "Queue and Playlist Management",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C023",
+      "display": "3.01",
+      "issue_id": "ISS-usability-queue_playlist_management",
+      "issue_name": "Queue and Playlist Management",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C024",
+      "display": "25,589",
+      "issue_id": "ISS-usability-queue_playlist_management",
+      "issue_name": "Queue and Playlist Management",
+      "metric": "priority_score"
+    },
+    {
+      "claim_id": "C025",
+      "display": "9,984",
+      "issue_id": "ISS-usability-ui_layout_redesign",
+      "issue_name": "Unpopular Interface Redesigns",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C026",
+      "display": "2.31",
+      "issue_id": "ISS-usability-ui_layout_redesign",
+      "issue_name": "Unpopular Interface Redesigns",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C027",
+      "display": "23,045",
+      "issue_id": "ISS-usability-ui_layout_redesign",
+      "issue_name": "Unpopular Interface Redesigns",
+      "metric": "priority_score"
+    },
+    {
+      "claim_id": "C028",
+      "display": "6,238",
+      "issue_id": "ISS-playback-playback_other",
+      "issue_name": "Other Playback Problems",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C029",
+      "display": "3.41",
+      "issue_id": "ISS-playback-playback_other",
+      "issue_name": "Other Playback Problems",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C030",
+      "display": "21,257",
+      "issue_id": "ISS-playback-playback_other",
+      "issue_name": "Other Playback Problems",
+      "metric": "priority_score"
+    },
+    {
+      "claim_id": "C031",
+      "display": "6,079",
+      "issue_id": "ISS-catalog-missing_or_removed_content",
+      "issue_name": "Missing or Removed Music",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C032",
+      "display": "3.00",
+      "issue_id": "ISS-catalog-missing_or_removed_content",
+      "issue_name": "Missing or Removed Music",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C033",
+      "display": "18,264",
+      "issue_id": "ISS-catalog-missing_or_removed_content",
+      "issue_name": "Missing or Removed Music",
+      "metric": "priority_score"
+    },
+    {
+      "claim_id": "C034",
+      "display": "5,417",
+      "issue_id": "ISS-catalog-lyrics",
+      "issue_name": "Lyrics Missing or Not Loading",
+      "metric": "complaint_count"
+    },
+    {
+      "claim_id": "C035",
+      "display": "2.96",
+      "issue_id": "ISS-catalog-lyrics",
+      "issue_name": "Lyrics Missing or Not Loading",
+      "metric": "mean_severity"
+    },
+    {
+      "claim_id": "C036",
+      "display": "16,061",
+      "issue_id": "ISS-catalog-lyrics",
+      "issue_name": "Lyrics Missing or Not Loading",
+      "metric": "priority_score"
+    }
+  ],
+  "EVIDENCE_PACK": [
+    {
+      "intent": "cancellation",
+      "issue_id": "ISS-other-general_negative",
+      "review_id": "45fbe634-e062-4c02-b872-c52c59cc7d80",
+      "severity": 2,
+      "text": "I want to give it a zero but there is no such option I'm uninstalling this app. There are so many better other app to listen music and I'm never coming back to Spotify."
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-other-general_negative",
+      "review_id": "bb68f6fb-eab7-4a09-b989-fd7dfb80de4b",
+      "severity": 2,
+      "text": "Why Play Store don't have a 0 star to rate."
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-other-general_negative",
+      "review_id": "c3981d77-4844-4c9c-8044-64284fb1350d",
+      "severity": 2,
+      "text": "Worst App ever how pathetic one can go for money....it's disgusting."
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-billing-free_tier_restrictions",
+      "review_id": "84300454-6a70-40f5-89bc-f9818dd4076d",
+      "severity": 4,
+      "text": "This was very good music app but the new updates are just worst. Everything needs premium now and can't even listen to music. Such a bad update."
+    },
+    {
+      "intent": "cancellation",
+      "issue_id": "ISS-billing-free_tier_restrictions",
+      "review_id": "b4fdcb8f-0a4f-4b03-9d98-6407bf649482",
+      "severity": 4,
+      "text": "Stop songs and asking money. Useless don't install"
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-billing-free_tier_restrictions",
+      "review_id": "cba5ab8b-0bbb-45b8-8925-b6d843d12d42",
+      "severity": 4,
+      "text": "It was working very well until it popped up with this thing saying I either have to deal with ads or get premium. It started only allowing me to listen to previews of my playlist songs. I am no longer able to listen to my favourite songs. I also can't press the repitition button any more. It allows "
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-usability-ads_interruptions",
+      "review_id": "188599a2-694a-4a3a-9c38-ea94f2d12cae",
+      "severity": 4,
+      "text": "Every time ads play a sephora ad will play then when the ad ends it the ap stops playing music this needs fixed"
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-usability-ads_interruptions",
+      "review_id": "e0419c38-35be-467e-acf2-e420973086f6",
+      "severity": 3,
+      "text": "Ads are playing when the song is not done"
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-usability-ads_interruptions",
+      "review_id": "31c015f1-fb21-49f7-a1bd-66bbb31493cd",
+      "severity": 3,
+      "text": "Terrible... adverts galore and you can only skip 6 times in the space of an hour... unless you pay of course.. no thank you!"
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-usability-controls_shuffle_skip",
+      "review_id": "5785e125-8b06-4318-acbd-f215ba170fe8",
+      "severity": 4,
+      "text": "The last update sucks. Auto shuffle is annoying, I can't even play my own playlists."
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-usability-controls_shuffle_skip",
+      "review_id": "b169469e-a8fc-4398-b672-aed0071dcbb3",
+      "severity": 4,
+      "text": "Control is terrible. While playing a song or podcast the controls don't show up at all. It plays whatever but the only way to stop it is to close the app itself completely. No pause, skip, or anything shows up, either in the app or in the notification bar."
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-usability-controls_shuffle_skip",
+      "review_id": "45f94f99-4d7c-483d-a046-fed1e9446fe4",
+      "severity": 4,
+      "text": "Not very user friendly. I hate it , if I could give zero stars I would . My playlist isn't working at all . Why can't I select the song I want to play ?"
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-playback-playback_stops_or_skips",
+      "review_id": "c30e8e8f-0790-4d25-b6a1-8f451285dc95",
+      "severity": 5,
+      "text": "Music isn't playing. I tried resarting my phone uninstalling then reinstalling. It deleted my playlist and gives me a ad when i press play then doesn't play the music after the ad. super disappointed ive been using this app for years and its never been like this."
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-playback-playback_stops_or_skips",
+      "review_id": "31d4742a-1c6c-4f9c-9679-77f259400986",
+      "severity": 5,
+      "text": "It was best for the past 2 years but now it's the worst for me after the new update . Songs won't play , playlists won't open , if opens shows empty . My personalized playlist won't open . Podcasts won't open, even though the network connection is good still shows no network connections . I reinstal"
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-playback-playback_stops_or_skips",
+      "review_id": "6200035a-f8e9-4089-9414-9e0bce05660b",
+      "severity": 4,
+      "text": "Spotify get lost trouble know a days the song has suddenly stop it's not working 😭 properly Spotify update are very waste"
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-access-login_failure",
+      "review_id": "47a1557c-36e8-4e7a-9b72-0a940c2ec715",
+      "severity": 5,
+      "text": "Can't even login using my phone number, , it says something went wrong, Tried like ten times, worst mistake I did by logging out. Need resolution immediately. I lost 150 songs saved in Playlist."
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-access-login_failure",
+      "review_id": "fe432c53-8738-4028-b103-3b89532a711a",
+      "severity": 5,
+      "text": "I used to login with my phone number now I can't all my playlist is in there please help"
+    },
+    {
+      "intent": "complaint",
+      "issue_id": "ISS-access-login_failure",
+      "review_id": "75faf80d-2cd5-45b4-84b8-ffb64616cc7b",
+      "severity": 5,
+      "text": "Freinds please read full sentence. Currently this app is bad, because phone number login time ''check your phone number'' problem. So lose my liked songs and all playlists . My Instagram I'd: _hisaaaan please contact me with solve trick."
+    }
+  ],
+  "ISSUE_DESCRIPTIONS": [
+    {
+      "description": "Customers express broad dissatisfaction with the app or its updates without identifying a specific problem.",
+      "issue_id": "ISS-other-general_negative"
+    },
+    {
+      "description": "Free users object to limits on controls and features such as selecting, skipping, or repeating songs.",
+      "issue_id": "ISS-billing-free_tier_restrictions"
+    },
+    {
+      "description": "Customers find ads too frequent or disruptive to listening, including ads between songs.",
+      "issue_id": "ISS-usability-ads_interruptions"
+    },
+    {
+      "description": "Customers report problems with shuffle, skipping, seeking, or other playback controls and limits.",
+      "issue_id": "ISS-usability-controls_shuffle_skip"
+    },
+    {
+      "description": "Customers say playback pauses, skips tracks, or fails to continue to the next song.",
+      "issue_id": "ISS-playback-playback_stops_or_skips"
+    },
+    {
+      "description": "Customers say the app fails, hangs, or errors when they try to log in.",
+      "issue_id": "ISS-access-login_failure"
+    },
+    {
+      "description": "Customers say the app freezes at startup, stops working, or crashes during use.",
+      "issue_id": "ISS-playback-crash_or_wont_open"
+    },
+    {
+      "description": "Customers object to unwanted suggested songs or shuffled playback and report difficulty managing playlists and queues.",
+      "issue_id": "ISS-usability-queue_playlist_management"
+    },
+    {
+      "description": "Customers dislike recent interface updates and find the redesigned app less usable.",
+      "issue_id": "ISS-usability-ui_layout_redesign"
+    },
+    {
+      "description": "Reviews describe varied playback problems, including incorrect tracks, broken controls, unexpected playback, and connection failures.",
+      "issue_id": "ISS-playback-playback_other"
+    },
+    {
+      "description": "Customers cannot find songs or playlists, or say previously available tracks have disappeared or become unavailable.",
+      "issue_id": "ISS-catalog-missing_or_removed_content"
+    },
+    {
+      "description": "Customers say song lyrics are unavailable or fail to load.",
+      "issue_id": "ISS-catalog-lyrics"
+    }
+  ],
+  "SEVERITY_SCALE": "1 none, 2 annoyance, 3 degraded, 4 core task blocked, 5 serious financial/privacy/data harm"
+}

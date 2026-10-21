@@ -1,0 +1,235 @@
+{
+  "api_cost_usd": 10.7022,
+  "by_role_phase": {
+    "enrich/initial": {
+      "attempts": 303,
+      "cache_write_tokens": 323010,
+      "cached_tokens": 533653,
+      "cost_usd_micro": 0.320014,
+      "failed": 3,
+      "input_tokens": 857569,
+      "output_tokens": 548382,
+      "reasoning_tokens": 0,
+      "reviews_sent": 15150,
+      "succeeded": 300
+    },
+    "enrich/resume": {
+      "attempts": 9569,
+      "cache_write_tokens": 11645130,
+      "cached_tokens": 16672616,
+      "cost_usd_micro": 10.361981,
+      "failed": 185,
+      "input_tokens": 28346024,
+      "output_tokens": 17472500,
+      "reasoning_tokens": 0,
+      "reviews_sent": 478437,
+      "succeeded": 9384
+    },
+    "group/initial": {
+      "attempts": 1,
+      "cache_write_tokens": 16296,
+      "cached_tokens": 0,
+      "cost_usd_micro": 0.003005,
+      "failed": 0,
+      "input_tokens": 16299,
+      "output_tokens": 1936,
+      "reasoning_tokens": 27,
+      "reviews_sent": 0,
+      "succeeded": 1
+    },
+    "memo/initial": {
+      "attempts": 2,
+      "cache_write_tokens": 12752,
+      "cached_tokens": 0,
+      "cost_usd_micro": 0.002916,
+      "failed": 0,
+      "input_tokens": 12758,
+      "output_tokens": 2643,
+      "reasoning_tokens": 499,
+      "reviews_sent": 0,
+      "succeeded": 2
+    },
+    "verify/initial": {
+      "attempts": 40,
+      "cache_write_tokens": 35340,
+      "cached_tokens": 0,
+      "cost_usd_micro": 0.014303,
+      "failed": 0,
+      "input_tokens": 45338,
+      "output_tokens": 17771,
+      "reasoning_tokens": 0,
+      "reviews_sent": 1000,
+      "succeeded": 40
+    }
+  },
+  "code_version": "git HEAD at export (see README)",
+  "cost_note": "computed from logged provider usage x rates in config.json (standard tier); not a provider invoice",
+  "distinct_text_status": {
+    "completed": 484139,
+    "quarantined": 50
+  },
+  "enrich_invocation_wall_clock": [
+    {
+      "end": "queue_empty_or_limit",
+      "pending_at_start": 484189,
+      "phase": "initial",
+      "start": "2026-10-20T16:04:12-0700",
+      "wall_s": 152.0,
+      "workers": 32
+    },
+    {
+      "end": "process killed (no end record); end = last logged call start",
+      "pending_at_start": 449189,
+      "phase": "resume",
+      "start": "2026-10-20T16:08:41-0700",
+      "wall_s": 7053.0,
+      "workers": 32
+    },
+    {
+      "end": "queue_empty_or_limit",
+      "pending_at_start": 155989,
+      "phase": "resume",
+      "start": "2026-10-20T19:25:27-0700",
+      "wall_s": 1544.0,
+      "workers": 32
+    },
+    {
+      "end": "max_seconds",
+      "pending_at_start": 20000,
+      "phase": "resume",
+      "start": "2026-10-20T19:55:18-0700",
+      "wall_s": 95.0,
+      "workers": 32
+    },
+    {
+      "end": "queue_empty_or_limit",
+      "pending_at_start": 12000,
+      "phase": "resume",
+      "start": "2026-10-20T19:59:55-0700",
+      "wall_s": 165.0,
+      "workers": 32
+    }
+  ],
+  "enrich_invocations": [
+    {
+      "batches": 300,
+      "elapsed_s": 156.42,
+      "phase": "initial",
+      "spent_usd": 0.31999437999999997,
+      "stop_reason": null,
+      "work_status": {
+        "completed": 15000,
+        "pending": 469189
+      }
+    },
+    {
+      "batches": 3121,
+      "elapsed_s": 1548.92,
+      "phase": "resume",
+      "spent_usd": 10.22411241999999,
+      "stop_reason": null,
+      "work_status": {
+        "completed": 464139,
+        "pending": 20000,
+        "quarantined": 50
+      }
+    },
+    {
+      "batches": 160,
+      "elapsed_s": 95.76,
+      "phase": "resume",
+      "spent_usd": 10.404331719999991,
+      "stop_reason": "max_seconds",
+      "work_status": {
+        "completed": 472139,
+        "pending": 12000,
+        "quarantined": 50
+      }
+    },
+    {
+      "batches": 240,
+      "elapsed_s": 164.98,
+      "phase": "resume",
+      "spent_usd": 10.681439590000005,
+      "stop_reason": null,
+      "work_status": {
+        "completed": 484139,
+        "quarantined": 50
+      }
+    }
+  ],
+  "enrich_requests": 9872,
+  "enrich_wall_seconds_sum": 9009.0,
+  "failed_attempts": 188,
+  "failure_reasons": {
+    "invalid_output": 45,
+    "transient": 143
+  },
+  "first_call": "2026-10-20T16:04:12-0700",
+  "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+  "input_tokens": 29277988,
+  "label_config": "gpt-6-luna+effort-none+enrich-v1+schema-v1",
+  "last_call": "2026-10-20T20:08:35-0700",
+  "limits": {
+    "fallback_fraction": 0.0,
+    "invalid_output_retries": 1,
+    "max_workers": 8,
+    "request_timeout_s": 60,
+    "spend_cap_usd": 25.0,
+    "transient_retries": 4
+  },
+  "models": [
+    "gpt-6-luna"
+  ],
+  "output_tokens": 18043232,
+  "prices_per_mtok": {
+    "gpt-6-luna": {
+      "cache_write": 0.125,
+      "cached_input": 0.01,
+      "input": 0.1,
+      "output": 0.5
+    }
+  },
+  "quarantine_reasons": {
+    "status=incomplete {'reason': 'max_output_tokens'}": 50
+  },
+  "roles_config": {
+    "enrich": {
+      "batch_size": 50,
+      "effort": "none",
+      "max_output_tokens": 4000,
+      "model": "gpt-6-luna",
+      "prompt": "prompts/enrich_v1.md",
+      "prompt_version": "enrich-v1",
+      "schema_version": "schema-v1"
+    },
+    "group": {
+      "effort": "low",
+      "max_output_tokens": 6000,
+      "model": "gpt-6-luna",
+      "prompt": "prompts/group_v1.md",
+      "prompt_version": "group-v1"
+    },
+    "memo": {
+      "effort": "low",
+      "max_output_tokens": 6000,
+      "model": "gpt-6-luna",
+      "prompt": "prompts/memo_v2.md",
+      "prompt_version": "memo-v2"
+    },
+    "verify": {
+      "batch_size": 25,
+      "effort": "none",
+      "max_output_tokens": 2000,
+      "model": "gpt-6-luna",
+      "prompt": "prompts/verify_v1.md",
+      "prompt_version": "verify-v1",
+      "schema_version": "vschema-v1"
+    }
+  },
+  "service_tier": "standard",
+  "span_hours_first_to_last_call": 4.073,
+  "state": "full",
+  "wall_hours": 2.502,
+  "wall_note": "sum of enrichment invocation wall-clock (start log -> end log, or -> last logged call for the invocation killed without an end record); includes time the laptop was asleep"
+}

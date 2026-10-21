@@ -91,7 +91,7 @@ let RANK=[];
 function md(src){ // tiny markdown: headings, lists, bold, code, citations
   let h=esc(src).split(/\n/);let out="",inl=false;
   const inline=t=>t.replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/`([^`]+)`/g,(m,c)=>`<code data-ref="${c}">${c}</code>`)
-    .replace(/\[(C\d{3}|A\d+)\]/g,(m,c)=>`<span class="chip" data-claim="${c}">${c}</span>`);
+    .replace(/\[((?:C\d{3}|A\d+)(?:\s*,\s*(?:C\d{3}|A\d+))*)\]/g,(m,g)=>g.split(/\s*,\s*/).map(c=>`<span class="chip" data-claim="${c}" title="${c[0]==="A"?"area/evaluation fact computed by code (memo_input.json)":"issue claim in claims.csv"}">${c}</span>`).join(" "));
   for(const l of h){const m=l.match(/^(#{1,3})\s+(.*)/);const li=l.match(/^\s*[-*]\s+(.*)/)||l.match(/^\s*\d+\.\s+(.*)/);
     if(li){if(!inl){out+="<ul>";inl=true}out+="<li>"+inline(li[1])+"</li>";continue}
     if(inl){out+="</ul>";inl=false}

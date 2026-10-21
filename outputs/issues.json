@@ -1,0 +1,709 @@
+{
+  "input_key": "c09d2ccc4dd240308edf85a8647a66ceaddd3d5723ce0cc00868f90e25dba37f",
+  "issues": [
+    {
+      "coherence": "mixed",
+      "description": "Reviews mention regional availability, location settings, and difficulty accessing libraries or accounts.",
+      "example_review_ids": [
+        "fc933029-591e-4db4-a51e-fc45c3a2b847",
+        "c399949d-922a-4805-a2e6-f86bd16b064e",
+        "0d17f676-8a5d-47bf-ab34-825e0ea66763",
+        "bd826646-0ddb-46e2-b64a-d9654d5ad53f",
+        "5aaba18d-3581-476f-9855-90b4aeb6fa2b",
+        "31ee7a1d-6da8-4c3b-8358-8b139dfdb1f6"
+      ],
+      "issue_id": "ISS-access-access_other",
+      "member_count": 785,
+      "name": "Other Access Problems",
+      "note": "Examples span several access problems.",
+      "subtopic": "access_other",
+      "topic": "access"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers report losing access to their accounts, missing old playlists, or suspected account misuse.",
+      "example_review_ids": [
+        "64237bbc-3d51-4b09-8e69-96da446ebccf",
+        "9e7fccd6-9db0-4d11-aeb5-5910e4f3427f",
+        "0b86e3c9-31bf-48de-b1c2-de66277c0532",
+        "bb975a06-77dc-422f-9fee-b86eff3bff33",
+        "ca8917ed-abcf-43d8-a0c0-b3d7453d6265",
+        "a7a0f6c9-9269-4131-84f8-44c5bb0e5fa8"
+      ],
+      "issue_id": "ISS-access-account_lost_or_hacked",
+      "member_count": 680,
+      "name": "Lost or Compromised Accounts",
+      "note": "",
+      "subtopic": "account_lost_or_hacked",
+      "topic": "access"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers say the app fails, hangs, or errors when they try to log in.",
+      "example_review_ids": [
+        "f8b9bca4-3623-44d8-99fd-06b00dd21e9e",
+        "5d9a6a3d-a872-4480-b7f1-b42d967119b3",
+        "ab5a7bd3-f285-46bf-94d2-a477f4b66eb2",
+        "eb14329e-27ca-4b6d-adee-9ba771353d9d",
+        "6eaa336d-75cc-44e9-a14f-13a4c137a10f",
+        "35429333-9e79-430a-a41f-86c9bd639688"
+      ],
+      "issue_id": "ISS-access-login_failure",
+      "member_count": 7221,
+      "name": "Unable to Log In",
+      "note": "",
+      "subtopic": "login_failure",
+      "topic": "access"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers cannot create or verify accounts because signup errors occur or verification codes do not arrive.",
+      "example_review_ids": [
+        "4498d133-8158-4945-990f-4ec375a56190",
+        "0a31274f-a261-42c0-a8eb-ca8eb87a38c7",
+        "1dce08e6-386f-4209-a54f-fbc4325621b4",
+        "a3c6ba28-be02-4c50-aca2-a6a4a9833510",
+        "50af3cef-905c-47d5-a78a-fc5cd757139a",
+        "4d6ee4ef-6755-4f14-b37f-1fb36181227c"
+      ],
+      "issue_id": "ISS-access-signup_verification",
+      "member_count": 498,
+      "name": "Signup and Verification Failures",
+      "note": "",
+      "subtopic": "signup_verification",
+      "topic": "access"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers say the app logs them out unexpectedly or repeatedly, sometimes with access or playlist problems afterward.",
+      "example_review_ids": [
+        "df47c8cc-ef10-4ee7-8487-2b603ea244c6",
+        "5f762ef7-26a6-44cd-b948-61f1fe9b7688",
+        "33f927e0-41f7-4b78-946c-a09e24b90a60",
+        "1a5a9a52-1019-4f8c-875f-f4a29b4c7387",
+        "22fac61f-dd32-4074-bcc6-408a2cc36125",
+        "d7fc42bb-8a44-4232-9466-a3b18612516f"
+      ],
+      "issue_id": "ISS-access-unexpected_logout",
+      "member_count": 728,
+      "name": "Unexpected Logouts",
+      "note": "",
+      "subtopic": "unexpected_logout",
+      "topic": "access"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Reviews raise varied billing concerns, including payment failures, reward claims, and complaints about premium changes.",
+      "example_review_ids": [
+        "7e1cd237-8424-463c-930b-d67c0e4eae4a",
+        "7c7f0e65-630a-465a-8f74-538fbd275825",
+        "be88c53f-4841-4725-9bd6-707ef3a996af",
+        "0f1d7211-cd8d-4264-a433-2a5511bba7a1",
+        "595501e7-0df9-4339-ae50-42794b08dea2",
+        "0678f7e5-9621-4516-84cc-db2fb226aafd"
+      ],
+      "issue_id": "ISS-billing-billing_other",
+      "member_count": 2448,
+      "name": "Other Billing Problems",
+      "note": "Examples cover multiple billing topics.",
+      "subtopic": "billing_other",
+      "topic": "billing"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers report duplicate or unexpected charges, difficulty paying, and trouble obtaining refunds.",
+      "example_review_ids": [
+        "7c2caa6e-4a2e-4087-b6a3-26009345ac98",
+        "20df7c36-0381-4a1a-8b99-44f5a486d367",
+        "080bab9f-20ba-430b-b95f-872647c6f8ac",
+        "0a0d9760-9208-4697-84b2-908641376dcf",
+        "c754daad-377a-44b8-a652-13822f58df7f",
+        "45f652d1-0d5f-4143-a8b3-87019805dee0"
+      ],
+      "issue_id": "ISS-billing-charges_refunds",
+      "member_count": 1084,
+      "name": "Incorrect Charges and Refunds",
+      "note": "",
+      "subtopic": "charges_refunds",
+      "topic": "billing"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Free users object to limits on controls and features such as selecting, skipping, or repeating songs.",
+      "example_review_ids": [
+        "f8e72fe0-c8b2-4653-9fd3-7a712a4d60f4",
+        "6100505a-da29-48db-8713-1d3e4e960d7b",
+        "70622507-2659-472a-9b86-94ce04274c1c",
+        "67788933-9b7d-4e82-a7df-cb5b1a95dabd",
+        "c65e7342-c26d-40df-85cd-342bf7c8e5de",
+        "26b3da62-5b66-4050-b545-78c7c309c02b"
+      ],
+      "issue_id": "ISS-billing-free_tier_restrictions",
+      "member_count": 48031,
+      "name": "Free-Tier Feature Restrictions",
+      "note": "",
+      "subtopic": "free_tier_restrictions",
+      "topic": "billing"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers feel Premium costs too much or is not worth paying for.",
+      "example_review_ids": [
+        "c5eeb834-f37c-4034-9ccd-fe76a362237d",
+        "ec6c275c-a4e9-4d1d-877c-94be22ecc788",
+        "34b95668-0e52-47c6-8f31-e4b127a8a767",
+        "3b0fdc58-57e3-46bc-b0f7-7f8f74271a43",
+        "332d082e-dcfc-497a-baac-0388f02b0729",
+        "085dec9a-4ab9-4c1f-9ef9-79188b8e0e90"
+      ],
+      "issue_id": "ISS-billing-premium_price",
+      "member_count": 6721,
+      "name": "Premium Value and Cost",
+      "note": "",
+      "subtopic": "premium_price",
+      "topic": "billing"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers who paid for Premium report that the app still shows ads or withholds Premium features.",
+      "example_review_ids": [
+        "78f5a49f-6964-44eb-b1c9-814a08ef6c49",
+        "05140eae-a163-4cd0-afc7-a3088ee787ee",
+        "bf6694af-f799-4048-a483-e761e8beaa3f",
+        "caaa91f8-0851-4aa0-acbe-00ab7eae68e6",
+        "a0ff0a7c-4425-45d6-97ad-062dafd00ced",
+        "7cbb5dfc-1012-4048-8baa-529c17dbba53"
+      ],
+      "issue_id": "ISS-billing-subscription_activation",
+      "member_count": 2304,
+      "name": "Premium Not Activating Properly",
+      "note": "",
+      "subtopic": "subscription_activation",
+      "topic": "billing"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Reviews mention missing catalog details, unavailable features, and content or app elements that fail to load.",
+      "example_review_ids": [
+        "9de2fad4-f0b8-40ed-a026-b9da4b51e046",
+        "6ad5caca-d48b-46a6-b789-9339cbfab010",
+        "890ac1f1-13df-470d-85d4-ab09fa3d37bd",
+        "0872a1f8-fdc7-4aa5-b6b4-fb98b5368759",
+        "50de2959-f35b-495d-aa74-63cb9539abf1",
+        "fbb8fb34-1b0f-4d8f-bd67-0fa06754d4d4"
+      ],
+      "issue_id": "ISS-catalog-catalog_other",
+      "member_count": 1529,
+      "name": "Other Catalog Problems",
+      "note": "Examples span several catalog-related concerns.",
+      "subtopic": "catalog_other",
+      "topic": "catalog"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers say song lyrics are unavailable or fail to load.",
+      "example_review_ids": [
+        "159f878e-d4aa-4495-a0ef-451ed32247c1",
+        "15e564f0-d943-4ba4-beb4-0bf11348822d",
+        "fdf4f25a-52c7-4fc7-bcac-1a0df5039243",
+        "0c45aac0-e5b8-4d36-b34b-ca8332771f4c",
+        "1bdf5e89-e5ed-45e3-9766-138fdb802769",
+        "7c179a0a-7cc6-461b-a843-50f9cde5e84c"
+      ],
+      "issue_id": "ISS-catalog-lyrics",
+      "member_count": 5417,
+      "name": "Lyrics Missing or Not Loading",
+      "note": "",
+      "subtopic": "lyrics",
+      "topic": "catalog"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers cannot find songs or playlists, or say previously available tracks have disappeared or become unavailable.",
+      "example_review_ids": [
+        "b422c48f-e973-431a-a1f2-d5d6a0020869",
+        "593a48b0-6934-4fbb-853c-40182b571589",
+        "ef042028-88e3-456a-a09e-1e1fdcf7bb79",
+        "fff165f2-f0e9-4dfd-be10-420b644e362d",
+        "521caaa4-e6d2-429a-8804-6b23171a7981",
+        "f11c9354-f0ce-4750-a611-8c6ce4472229"
+      ],
+      "issue_id": "ISS-catalog-missing_or_removed_content",
+      "member_count": 6079,
+      "name": "Missing or Removed Music",
+      "note": "",
+      "subtopic": "missing_or_removed_content",
+      "topic": "catalog"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Customers report difficulty finding or accessing podcasts and audiobooks, and object to podcast content or recommendations.",
+      "example_review_ids": [
+        "2dea9882-2520-444d-8f22-609b8142536b",
+        "05947fe4-47e6-4e79-91ca-837904df4a08",
+        "08e46481-5cfd-41a1-a63a-b6653c2031e8",
+        "1d271aa7-07f4-4132-b078-b76319bff018",
+        "71a5d1b4-0dff-4be4-921c-6e3b27a16774",
+        "089c55d7-7479-4f07-8224-57c41a2d2fa4"
+      ],
+      "issue_id": "ISS-catalog-podcasts_audiobooks",
+      "member_count": 1012,
+      "name": "Podcast and Audiobook Issues",
+      "note": "Examples include access, discovery, and content preferences.",
+      "subtopic": "podcasts_audiobooks",
+      "topic": "catalog"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers say recommendations are repetitive, irrelevant, or poorly matched to their music preferences.",
+      "example_review_ids": [
+        "6471aacb-db0f-4934-8cea-ca97003a7953",
+        "b003a69b-9e74-43a5-96db-d37139411cf5",
+        "70c5bff7-7d66-4997-b5c7-d04d2611cd16",
+        "d8cae64e-fc25-4808-b509-b2ed9b5e69e2",
+        "33f14a42-dba1-4bce-b66c-a99715880bfb",
+        "953e5d30-6c67-4602-ab96-62ba3b46cb42"
+      ],
+      "issue_id": "ISS-catalog-recommendations_repetitive",
+      "member_count": 3278,
+      "name": "Repetitive or Poor Recommendations",
+      "note": "",
+      "subtopic": "recommendations_repetitive",
+      "topic": "catalog"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Customers struggle to find specific songs or report irrelevant recommendations and search results.",
+      "example_review_ids": [
+        "4b3bad49-3448-4f3b-89bb-e98ac741249b",
+        "85b5abd5-b0b1-4403-b213-6e6c8c54144f",
+        "df2233f4-507d-4c81-a028-a8b0a929e73d",
+        "47a005cc-681d-4b76-b093-154ad9ed9543",
+        "ed4ad630-95db-4079-964d-a6d2ebaad819",
+        "3d059fa6-26ca-4690-bee7-98b2ab96c887"
+      ],
+      "issue_id": "ISS-catalog-search_discovery",
+      "member_count": 3173,
+      "name": "Search and Content Discovery Problems",
+      "note": "Examples combine search and recommendations.",
+      "subtopic": "search_discovery",
+      "topic": "catalog"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers report that music or playlists will not download, or downloads remain incomplete or unusable.",
+      "example_review_ids": [
+        "528cef35-28be-4789-80e6-117f07a3571f",
+        "a0d9b5d7-cc7b-4b31-889b-cdb0b2fcfccd",
+        "fa1e4c5c-d119-4992-8739-f18570af6d46",
+        "82ca5e2d-6994-4ae7-97e4-8a16e67072a0",
+        "31f89f9b-3452-4a61-b598-dddae5c45fe7",
+        "8d6c5eb8-3a1b-46ff-a2db-a786993ddb3d"
+      ],
+      "issue_id": "ISS-downloads-download_failure",
+      "member_count": 2026,
+      "name": "Downloads Fail or Incomplete",
+      "note": "",
+      "subtopic": "download_failure",
+      "topic": "downloads"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers say downloaded music disappears or is no longer detected, sometimes requiring another download.",
+      "example_review_ids": [
+        "082186f6-0798-44d3-a74b-b981d7e478a6",
+        "7eb6c834-f514-4be0-8a83-a5c9bfed4f45",
+        "bcf00c78-d468-47b3-a200-125be3f2c126",
+        "f43d7211-217f-4445-bd06-7071650a21fb",
+        "f7421076-2e0b-4818-b9e2-150074f7a5b2",
+        "79a0c6d6-7e0b-49f6-a715-bddc7b03b9b8"
+      ],
+      "issue_id": "ISS-downloads-downloads_disappearing",
+      "member_count": 1082,
+      "name": "Downloads Disappear",
+      "note": "",
+      "subtopic": "downloads_disappearing",
+      "topic": "downloads"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Reviews mention download limitations and problems with storage locations, large libraries, or platform availability.",
+      "example_review_ids": [
+        "c9916825-55dd-4fe4-8e0e-5a9a09d91cad",
+        "6a0779a2-ce8b-4cc5-a4f1-f35c575509d0",
+        "bc34db33-d6b9-4e12-b01e-691dc8e60f9b",
+        "73fbf4eb-9384-42c8-9828-c5ea5e4c9f75",
+        "77170456-d2fd-46fd-8706-cb9a12c97b9c",
+        "271175ee-eeb5-42c5-a05d-834317b850cc"
+      ],
+      "issue_id": "ISS-downloads-downloads_other",
+      "member_count": 459,
+      "name": "Other Download and Storage Issues",
+      "note": "Examples cover several download and storage concerns.",
+      "subtopic": "downloads_other",
+      "topic": "downloads"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers cannot reliably play downloaded music or select tracks when offline.",
+      "example_review_ids": [
+        "5d451929-7a83-4769-b750-abf9823a3c4c",
+        "7ab3cf38-9d47-4811-b4fe-a525c14c2625",
+        "f849e11c-f67a-4df3-9a18-7656b2328a0a",
+        "da8ec31f-26f8-4f11-8e48-a0778386405e",
+        "b9410d75-a43c-40d1-a431-bb0feb0fbf00",
+        "c4b7728e-b89a-4949-bec1-efbf04b6e920"
+      ],
+      "issue_id": "ISS-downloads-offline_mode",
+      "member_count": 2170,
+      "name": "Downloaded Music Fails Offline",
+      "note": "",
+      "subtopic": "offline_mode",
+      "topic": "downloads"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Customers express broad dissatisfaction with the app or its updates without identifying a specific problem.",
+      "example_review_ids": [
+        "455aec72-b5b2-4c11-8fc9-11cfc6e55061",
+        "c5c9c5f4-dcc9-469c-b5ff-89d5232e33df",
+        "52f1f24b-4e83-4496-82cd-ec6dab64ad12",
+        "8fc6cece-8f6e-473b-99bb-e68dce1a7362",
+        "dcc4424f-d879-4f85-ad6d-146d2afa42f5",
+        "0e03bd58-8c4c-4c9a-9764-2f7ff793c894"
+      ],
+      "issue_id": "ISS-other-general_negative",
+      "member_count": 79391,
+      "name": "General Negative Feedback",
+      "note": "",
+      "subtopic": "general_negative",
+      "topic": "other"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Customers express general enjoyment of Spotify or a preference for it over other services.",
+      "example_review_ids": [
+        "72543c13-5d62-41e2-9f85-475285f24c20",
+        "6c79747c-97c1-42a5-97b3-72883109cf1e",
+        "2b38cf26-df5c-4cb0-9581-ed73781cba05",
+        "6cc1a6c0-3668-4f2c-99fb-9648801f44d0",
+        "d535d888-2fcc-431b-872d-2d0e2ed67db8",
+        "0b1e5b7a-02fe-4d10-a189-b5f6bcff5416"
+      ],
+      "issue_id": "ISS-other-general_positive",
+      "member_count": 236,
+      "name": "General Positive Feedback",
+      "note": "Examples include praise alongside minor complaints.",
+      "subtopic": "general_positive",
+      "topic": "other"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Reviews raise varied concerns, including updating, bugs, Wrapped results, and app behavior.",
+      "example_review_ids": [
+        "74c81603-6e10-4d85-b772-a80f591e0f76",
+        "296d600a-2cea-4fe2-ba7f-99fdc8af5f82",
+        "dd249563-b6c2-4068-9b78-045f9909d5be",
+        "f4594de5-2b51-4be6-8bc4-f541d859e840",
+        "ca0b0dab-1c93-44a9-85a8-e2026013899a",
+        "c34ae28c-6f50-4542-a0b2-339602dd6f34"
+      ],
+      "issue_id": "ISS-other-other_misc",
+      "member_count": 1176,
+      "name": "Miscellaneous Feedback",
+      "note": "Examples do not point to one shared problem.",
+      "subtopic": "other_misc",
+      "topic": "other"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Reviews criticize Spotify for perceived political or cultural positions, or express dissatisfaction without a product issue.",
+      "example_review_ids": [
+        "d6e20199-6f39-4248-8657-ab1a604e7ca2",
+        "e4a99a38-9835-4532-966a-7069ccf5f23f",
+        "3f5d228c-b2f5-479a-a30b-04d5cb4d5c00",
+        "5cf41ecd-625c-4775-8655-8ea9dea93c56",
+        "75fc59dc-b2cf-406c-8aeb-ffa43a41c03c",
+        "fa09db35-28d8-4e7b-ab72-0cfd007f7dca"
+      ],
+      "issue_id": "ISS-other-unrelated_or_political",
+      "member_count": 2025,
+      "name": "Political or Unrelated Complaints",
+      "note": "",
+      "subtopic": "unrelated_or_political",
+      "topic": "other"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers say audio quality is poor or want clearer, higher-resolution, or louder sound.",
+      "example_review_ids": [
+        "08b86661-49dc-4a93-9e9f-6a08abd0974d",
+        "71e0d08e-435b-463b-955e-2dfeaeea9538",
+        "04c19d57-20d2-4b8c-b9c1-c242f51ad66a",
+        "d2161cab-fce0-48a4-8cb8-ca672391df33",
+        "4d90ed6a-68af-4b87-8ebe-2b9a87d5717c",
+        "411fe6e8-e72f-4c2d-ad5e-caf1b033c355"
+      ],
+      "issue_id": "ISS-playback-audio_quality",
+      "member_count": 1912,
+      "name": "Poor Audio Quality",
+      "note": "",
+      "subtopic": "audio_quality",
+      "topic": "playback"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Customers report excessive battery, memory, storage, or data use, including activity in the background.",
+      "example_review_ids": [
+        "b4a75420-bac4-43b0-9c59-d79c038aebda",
+        "00d3144c-5499-4184-acf2-84172a56a04f",
+        "86f78343-28a8-4c96-aefe-cc6e969dba49",
+        "b89b8d6d-b13d-4945-9613-851f0083cbe9",
+        "fb28843e-0eaa-4176-a20e-c1eb16a490e6",
+        "283e8b22-02a3-4119-b558-5bbbc861fc88"
+      ],
+      "issue_id": "ISS-playback-battery_resource_use",
+      "member_count": 912,
+      "name": "High Resource and Data Use",
+      "note": "Examples cover several resource types.",
+      "subtopic": "battery_resource_use",
+      "topic": "playback"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers report that Spotify disconnects or claims there is no internet connection despite a working network.",
+      "example_review_ids": [
+        "fdbf8504-e46d-4b77-814a-926336711a16",
+        "e21d3648-6989-49bb-a98a-9929663f032a",
+        "51a9a552-c7ea-4e42-9443-af1f839d387c",
+        "47414dbf-d1d9-49e4-85ca-1515d01cc95d",
+        "7989ebe0-14ed-4d9b-8016-3acc6a1ce2e7",
+        "97a6139d-a1b0-41ba-9ff4-157d2309e8b7"
+      ],
+      "issue_id": "ISS-playback-connection_error",
+      "member_count": 3647,
+      "name": "Connection and Network Errors",
+      "note": "",
+      "subtopic": "connection_error",
+      "topic": "playback"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers say the app freezes at startup, stops working, or crashes during use.",
+      "example_review_ids": [
+        "5f3cdf7f-c5a8-40d3-9b6b-a9f8a50ccb00",
+        "391f8714-d78d-4dda-959c-a17472c59944",
+        "c1bf9fb4-3716-42d8-a096-303d3f534c7b",
+        "64a23ec3-2f24-4b0b-804b-c34ddc2cc693",
+        "cee6fbcb-4784-4da8-b99d-39379f98812a",
+        "71ddff13-dc64-4f57-a20c-61bd889ece29"
+      ],
+      "issue_id": "ISS-playback-crash_or_wont_open",
+      "member_count": 6868,
+      "name": "App Crashes or Won't Open",
+      "note": "",
+      "subtopic": "crash_or_wont_open",
+      "topic": "playback"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Customers report problems with Bluetooth, casting, connected devices, or playback behavior triggered by car and device connections.",
+      "example_review_ids": [
+        "bda84e58-c625-4db9-9725-fa443450d060",
+        "0319a955-4a02-45c5-bf34-9f1f01ab2119",
+        "2a95954a-ced6-4e0a-9075-d44ae3ac8c90",
+        "e604739e-3b9d-4518-b3a9-f7e1201ed1de",
+        "a7e5deb4-8b4f-4f25-9879-41247551d9d6",
+        "8345fbf7-0ed0-47d4-af64-625eb73631ed"
+      ],
+      "issue_id": "ISS-playback-device_integration",
+      "member_count": 4653,
+      "name": "Device and Playback Integration Issues",
+      "note": "Examples span different integrations and behaviors.",
+      "subtopic": "device_integration",
+      "topic": "playback"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers report slow loading, lag, freezing, or general sluggishness, often after an update.",
+      "example_review_ids": [
+        "65012a83-ee85-4a2c-b1dd-d86e567a2657",
+        "63d86045-5236-42b6-8fec-36d1584cd83b",
+        "8a41e47b-39d2-4e56-8bf6-f5546e0f5289",
+        "d7a72ba4-3654-4331-b85e-cd02934548c3",
+        "f8035350-126f-4c32-84d5-6d11366bee3b",
+        "ca11b3c4-441c-4dc5-8fc9-abe29ce3a915"
+      ],
+      "issue_id": "ISS-playback-lag_slow_or_freeze",
+      "member_count": 3915,
+      "name": "Slow or Frozen App",
+      "note": "",
+      "subtopic": "lag_slow_or_freeze",
+      "topic": "playback"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Reviews describe varied playback problems, including incorrect tracks, broken controls, unexpected playback, and connection failures.",
+      "example_review_ids": [
+        "cc262e43-704d-4d1e-8bc6-8ff29816f258",
+        "de5d02e8-1fd0-4b6b-bb54-c692bb36ed5e",
+        "94480340-c0a0-43ff-9672-37640fa328a7",
+        "ce1c96e7-bf87-4961-802d-0c1c51af48fe",
+        "e6504418-6d01-4f33-872f-43febdc310a8",
+        "6d916243-5d03-40a9-b92e-52b9af1b0e82"
+      ],
+      "issue_id": "ISS-playback-playback_other",
+      "member_count": 6238,
+      "name": "Other Playback Problems",
+      "note": "Examples span several playback problems.",
+      "subtopic": "playback_other",
+      "topic": "playback"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers say playback pauses, skips tracks, or fails to continue to the next song.",
+      "example_review_ids": [
+        "3b305474-25e6-4c74-95b6-7d844d5ffc25",
+        "7a3491e1-6ba7-49c3-9fe0-0c80f3236ba1",
+        "c187194c-d476-4609-ad1b-05569d856384",
+        "6df2565e-3944-41d9-9be6-cb1e71381dcc",
+        "62ce2633-ef02-4806-a0b0-8bad19e26a00",
+        "e8ce1de3-16d3-4568-95d4-316948ae2604"
+      ],
+      "issue_id": "ISS-playback-playback_stops_or_skips",
+      "member_count": 11812,
+      "name": "Playback Stops or Skips",
+      "note": "",
+      "subtopic": "playback_stops_or_skips",
+      "topic": "playback"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Customers criticize support access, support options, or the quality and fairness of service.",
+      "example_review_ids": [
+        "b47cb995-d538-4c1a-b2be-c0158539b595",
+        "553cd3f0-c0b1-4ba6-9c0e-428256738336",
+        "799b448d-8855-429b-ba8a-20dfc54f698a",
+        "8cb04239-ef7b-42b4-aea5-fa9c7bd1654d",
+        "f17a0368-64c4-490e-b099-ed8553303771",
+        "7bb2f86f-ab35-47d3-bc78-10e9ddeecc67"
+      ],
+      "issue_id": "ISS-support-support_other",
+      "member_count": 165,
+      "name": "Other Support Concerns",
+      "note": "Examples include access and service-quality complaints.",
+      "subtopic": "support_other",
+      "topic": "support"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers say they cannot contact support, receive no response, or get no useful resolution.",
+      "example_review_ids": [
+        "c0b9296f-65e2-4f34-a74d-3ad2d5cd6da8",
+        "caf046a6-0627-4601-94e3-16c4afffa869",
+        "9270cb5f-4cde-4225-85fb-574b0600ebc3",
+        "c45783a4-6633-44b3-b620-2eab4fda17a2",
+        "0288e1e2-e0ea-4cb8-bd11-0e0fd0da5aeb",
+        "659121aa-d614-480c-8acb-abb7463b269c"
+      ],
+      "issue_id": "ISS-support-support_unresponsive",
+      "member_count": 281,
+      "name": "Support Is Hard to Reach",
+      "note": "",
+      "subtopic": "support_unresponsive",
+      "topic": "support"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers find ads too frequent or disruptive to listening, including ads between songs.",
+      "example_review_ids": [
+        "63e45658-6fb8-4b33-9fdb-de1b3b3b86fa",
+        "1e0c7853-4994-4738-b2b3-b3b5c83b7661",
+        "bd157456-e532-4177-b5b3-201ee893284f",
+        "89f097c7-9d2e-42ec-8bc0-92c5db5a2b92",
+        "c73a9f2f-ed8c-479c-890a-b9f950947ca1",
+        "7927e560-d3b2-4f27-8c4c-38bc05c161bf"
+      ],
+      "issue_id": "ISS-usability-ads_interruptions",
+      "member_count": 36257,
+      "name": "Frequent Ad Interruptions",
+      "note": "",
+      "subtopic": "ads_interruptions",
+      "topic": "usability"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Customers report problems with shuffle, skipping, seeking, or other playback controls and limits.",
+      "example_review_ids": [
+        "80c0e6ad-9b76-4414-9aa4-7f4b2850f790",
+        "0de8df57-5c4b-445f-8e16-27c7646a336b",
+        "1f9f4dce-3ab2-46a8-984a-6d8bd79996f5",
+        "8e5e29e6-9578-4c3e-9231-ba870e40cddb",
+        "799660c2-78f7-45fc-a26a-60a6503aa45a",
+        "4582a3eb-64a5-4710-b076-cfabb59c5738"
+      ],
+      "issue_id": "ISS-usability-controls_shuffle_skip",
+      "member_count": 14857,
+      "name": "Shuffle and Playback Controls",
+      "note": "Examples combine control failures and feature restrictions.",
+      "subtopic": "controls_shuffle_skip",
+      "topic": "usability"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Customers object to unwanted suggested songs or shuffled playback and report difficulty managing playlists and queues.",
+      "example_review_ids": [
+        "9eb87a92-b39c-48e6-a9d7-7e419e19c6a2",
+        "aa3067ce-ce13-4a5a-8e75-e9301b6879c0",
+        "b84442b8-21e6-405a-ae8d-63dc2e6cbd3f",
+        "b9db8cac-17a6-41b6-87cb-26432b0626f4",
+        "cb09eb37-5830-4b60-9c63-2b3d6a9e471c",
+        "41a1372d-db13-4fda-b5ef-8b2e3dc55386"
+      ],
+      "issue_id": "ISS-usability-queue_playlist_management",
+      "member_count": 8507,
+      "name": "Queue and Playlist Management",
+      "note": "Examples include unwanted playback and playlist-management changes.",
+      "subtopic": "queue_playlist_management",
+      "topic": "usability"
+    },
+    {
+      "coherence": "coherent",
+      "description": "Customers dislike recent interface updates and find the redesigned app less usable.",
+      "example_review_ids": [
+        "29382155-e0f2-487f-84f0-182519f890c1",
+        "cc52a772-b4d7-425d-9470-574a5900bd2a",
+        "1a13320e-eec2-4f25-8a09-cc6b50713c86",
+        "315a60c7-2910-4388-93cd-587a44dd858f",
+        "b7488c9e-672a-443a-9f0f-13b1c92201a7",
+        "cf6984f8-e570-4fa3-81a4-a18dc671c82d"
+      ],
+      "issue_id": "ISS-usability-ui_layout_redesign",
+      "member_count": 9984,
+      "name": "Unpopular Interface Redesigns",
+      "note": "",
+      "subtopic": "ui_layout_redesign",
+      "topic": "usability"
+    },
+    {
+      "coherence": "mixed",
+      "description": "Customers report missing features, difficulty finding settings, and other interface or interaction frustrations.",
+      "example_review_ids": [
+        "f9f7fb19-3a8a-43ce-976c-90e9814839d2",
+        "4598fc33-c9f9-4c7c-9a55-d41fcef7cb3c",
+        "abb33373-ec10-4288-b7ee-7d2328c75d74",
+        "f9c46008-c0b5-497e-b982-93fd2d8eb65e",
+        "60ad65bc-c8a2-4e77-b1a5-9b7052b710b6",
+        "1433dba0-c669-462d-b096-b3a05d47cc15"
+      ],
+      "issue_id": "ISS-usability-usability_other",
+      "member_count": 4249,
+      "name": "Other Usability Problems",
+      "note": "Examples span unrelated usability concerns.",
+      "subtopic": "usability_other",
+      "topic": "usability"
+    }
+  ],
+  "membership_rule": "issue = enrichment subtopic of each completed complaint/cancellation record; one issue per record",
+  "request_id": "resp_06c01a090c20b09e016ad82c62af6487d0b19c37c0bb6390b2"
+}

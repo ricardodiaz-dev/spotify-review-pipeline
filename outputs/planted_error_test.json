@@ -1,0 +1,17 @@
+{
+  "comparison": {
+    "all_three_agree": 0.35,
+    "compared": 40,
+    "disagreements": 26,
+    "intent_agreement": 0.9,
+    "severity_exact": 0.825,
+    "severity_mae": 0.2,
+    "severity_within_1": 0.975,
+    "topic_agreement": 0.45
+  },
+  "excluded_from_business_aggregates": true,
+  "planted_errors_flagged_by_comparator": 20,
+  "planted_topic_errors": 20,
+  "result": "pass",
+  "synthetic": true
+}

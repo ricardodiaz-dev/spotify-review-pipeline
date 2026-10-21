@@ -1,0 +1,35 @@
+{"distinct": 484189, "elapsed_s": 30.27, "empty": 13, "records": 660622, "stage": "ingest", "ts": "2026-10-20T13:34:33-0700"}
+{"batches": 300, "cap": 25.0, "label_config": "gpt-6-luna+effort-none+enrich-v1+schema-v1", "pending": 484189, "phase": "initial", "spent": 0.0, "stage": "enrich_start", "ts": "2026-10-20T16:04:12-0700", "workers": 32}
+{"batches": 300, "elapsed_s": 156.42, "phase": "initial", "spent_usd": 0.31999437999999997, "stage": "enrich_end", "stop_reason": null, "ts": "2026-10-20T16:06:44-0700", "work_status": {"completed": 15000, "pending": 469189}}
+{"elapsed_s": 162.997, "name": "enrich", "stage": "stage_time", "ts": "2026-10-20T16:06:50-0700"}
+{"elapsed_s": 162.999, "stage": "invocation", "stages": ["enrich"], "ts": "2026-10-20T16:06:50-0700"}
+{"batches": 8984, "cap": 25.0, "label_config": "gpt-6-luna+effort-none+enrich-v1+schema-v1", "pending": 449189, "phase": "resume", "spent": 0.31999437999999997, "stage": "enrich_start", "ts": "2026-10-20T16:08:41-0700", "workers": 32}
+{"batches": 3120, "cap": 25.0, "label_config": "gpt-6-luna+effort-none+enrich-v1+schema-v1", "pending": 155989, "phase": "resume", "spent": 6.675316904999984, "stage": "enrich_start", "ts": "2026-10-20T19:25:27-0700", "workers": 32}
+{"batches": 3121, "elapsed_s": 1548.92, "phase": "resume", "spent_usd": 10.22411241999999, "stage": "enrich_end", "stop_reason": null, "ts": "2026-10-20T19:51:11-0700", "work_status": {"completed": 464139, "pending": 20000, "quarantined": 50}}
+{"elapsed_s": 1557.469, "name": "enrich", "stage": "stage_time", "ts": "2026-10-20T19:51:20-0700"}
+{"elapsed_s": 1557.47, "stage": "invocation", "stages": ["enrich"], "ts": "2026-10-20T19:51:20-0700"}
+{"batches": 400, "cap": 25.0, "label_config": "gpt-6-luna+effort-none+enrich-v1+schema-v1", "pending": 20000, "phase": "resume", "spent": 10.22411241999999, "stage": "enrich_start", "ts": "2026-10-20T19:55:18-0700", "workers": 32}
+{"batches": 160, "elapsed_s": 95.76, "phase": "resume", "spent_usd": 10.404331719999991, "stage": "enrich_end", "stop_reason": "max_seconds", "ts": "2026-10-20T19:56:53-0700", "work_status": {"completed": 472139, "pending": 12000, "quarantined": 50}}
+{"elapsed_s": 106.003, "name": "enrich", "stage": "stage_time", "ts": "2026-10-20T19:57:03-0700"}
+{"elapsed_s": 106.004, "stage": "invocation", "stages": ["enrich"], "ts": "2026-10-20T19:57:03-0700"}
+{"batches": 240, "cap": 25.0, "label_config": "gpt-6-luna+effort-none+enrich-v1+schema-v1", "pending": 12000, "phase": "resume", "spent": 10.404331719999991, "stage": "enrich_start", "ts": "2026-10-20T19:59:55-0700", "workers": 32}
+{"batches": 240, "elapsed_s": 164.98, "phase": "resume", "spent_usd": 10.681439590000005, "stage": "enrich_end", "stop_reason": null, "ts": "2026-10-20T20:02:40-0700", "work_status": {"completed": 484139, "quarantined": 50}}
+{"elapsed_s": 174.742, "name": "enrich", "stage": "stage_time", "ts": "2026-10-20T20:02:49-0700"}
+{"elapsed_s": 174.743, "stage": "invocation", "stages": ["enrich"], "ts": "2026-10-20T20:02:49-0700"}
+{"all_three_agree": 0.709, "compared": 1000, "disagreements": 291, "elapsed_s": 222.26, "intent_agreement": 0.914, "sample_seed": "verify-seed-2026-10-20", "sample_size": 1000, "sampled_from": "completed distinct texts", "severity_exact": 0.884, "severity_mae": 0.125, "severity_within_1": 0.991, "spent_usd": 0.014303, "stage": "verify", "topic_agreement": 0.841, "ts": "2026-10-20T20:06:38-0700"}
+{"elapsed_s": 222.437, "name": "verify", "stage": "stage_time", "ts": "2026-10-20T20:06:38-0700"}
+{"elapsed_s": 222.437, "stage": "invocation", "stages": ["verify"], "ts": "2026-10-20T20:06:38-0700"}
+{"issues": 39, "members": 293810, "request_id": "resp_06c01a090c20b09e016ad82c62af6487d0b19c37c0bb6390b2", "stage": "group", "ts": "2026-10-20T20:07:35-0700"}
+{"elapsed_s": 36.316, "name": "group", "stage": "stage_time", "ts": "2026-10-20T20:07:35-0700"}
+{"elapsed_s": 36.317, "stage": "invocation", "stages": ["group"], "ts": "2026-10-20T20:07:35-0700"}
+{"issues": 39, "stage": "rank", "top": ["ISS-other-general_negative", "ISS-billing-free_tier_restrictions", "ISS-usability-ads_interruptions", "ISS-usability-controls_shuffle_skip", "ISS-playback-playback_stops_or_skips"], "ts": "2026-10-20T20:07:59-0700"}
+{"elapsed_s": 23.224, "name": "rank", "stage": "stage_time", "ts": "2026-10-20T20:07:59-0700"}
+{"elapsed_s": 23.225, "stage": "invocation", "stages": ["rank"], "ts": "2026-10-20T20:07:59-0700"}
+{"cited": 12, "problems": [], "stage": "memo", "status": "pass", "ts": "2026-10-20T20:08:14-0700"}
+{"elapsed_s": 14.021, "name": "memo", "stage": "stage_time", "ts": "2026-10-20T20:08:14-0700"}
+{"elapsed_s": 14.021, "stage": "invocation", "stages": ["memo"], "ts": "2026-10-20T20:08:14-0700"}
+{"cited": 20, "problems": [], "stage": "memo", "status": "pass", "ts": "2026-10-20T20:08:52-0700"}
+{"elapsed_s": 18.36, "name": "memo", "stage": "stage_time", "ts": "2026-10-20T20:08:52-0700"}
+{"elapsed_s": 18.361, "stage": "invocation", "stages": ["memo"], "ts": "2026-10-20T20:08:52-0700"}
+{"elapsed_s": 41.649, "name": "export", "stage": "stage_time", "ts": "2026-10-20T20:09:40-0700"}
+{"elapsed_s": 41.651, "stage": "invocation", "stages": ["export"], "ts": "2026-10-20T20:09:40-0700"}

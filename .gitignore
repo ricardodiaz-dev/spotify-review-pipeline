@@ -13,3 +13,4 @@ node_modules/
 .vercel
 cost/pilot_run_*.log
 *.log
+evals/resume_demo.mov

@@ -145,9 +145,19 @@ class Client:
                 "reasoning": {"effort": rc["effort"]}, "max_output_tokens": rc["max_output_tokens"], "store": False}
         if schema:
             body["text"] = {"format": {"type": "json_schema", "name": schema["name"], "schema": schema["schema"], "strict": True}}
+        limit = self.cfg["limits"]["request_timeout_s"]
+        t0 = time.time()
         try:
-            r = self.session.post(self.cfg["endpoint"], json=body, timeout=self.cfg["limits"]["request_timeout_s"],
+            # stream + wall-clock deadline: a per-read timeout alone never fires if the server trickles bytes
+            r = self.session.post(self.cfg["endpoint"], json=body, timeout=(10, limit), stream=True,
                                   headers={"Authorization": f"Bearer {self.key}", "Content-Type": "application/json"})
+            buf = bytearray()
+            for chunk in r.iter_content(8192):
+                buf.extend(chunk)
+                if time.time() - t0 > limit:
+                    r.close()
+                    raise TransientError(f"wall_timeout>{limit}s")
+            r._content = bytes(buf)
         except requests.RequestException as e:
             raise TransientError(type(e).__name__)
         req_id = r.headers.get("x-request-id", "")

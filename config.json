@@ -33,8 +33,8 @@
     "memo": {
       "model": "gpt-6-luna",
       "effort": "low",
-      "prompt": "prompts/memo_v1.md",
-      "prompt_version": "memo-v1",
+      "prompt": "prompts/memo_v3.md",
+      "prompt_version": "memo-v3",
       "max_output_tokens": 6000
     }
   },
@@ -43,7 +43,7 @@
     "max_workers": 8,
     "transient_retries": 4,
     "invalid_output_retries": 1,
-    "request_timeout_s": 120,
+    "request_timeout_s": 60,
     "fallback_fraction": 0.0
   },
   "prices_per_mtok": {

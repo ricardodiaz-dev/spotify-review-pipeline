@@ -1,0 +1,40 @@
+rank,issue_id,name,topic,complaint_count,severity_sum,mean_severity,priority_score,cancellation_count,severity_ge4_count,needs_review_count
+1,ISS-other-general_negative,General Negative Feedback,other,79391,157846,1.988210,157846,6764,289,10632
+2,ISS-billing-free_tier_restrictions,Free-Tier Feature Restrictions,billing,48031,140647,2.928255,140647,9741,570,5413
+3,ISS-usability-ads_interruptions,Frequent Ad Interruptions,usability,36257,77273,2.131257,77273,2530,83,3526
+4,ISS-usability-controls_shuffle_skip,Shuffle and Playback Controls,usability,14857,44091,2.967692,44091,1998,161,2243
+5,ISS-playback-playback_stops_or_skips,Playback Stops or Skips,playback,11812,37795,3.199712,37795,1201,2361,1533
+6,ISS-access-login_failure,Unable to Log In,access,7221,28532,3.951253,28532,384,6851,719
+7,ISS-playback-crash_or_wont_open,App Crashes or Won't Open,playback,6868,26216,3.817123,26216,467,5637,753
+8,ISS-usability-queue_playlist_management,Queue and Playlist Management,usability,8507,25589,3.007993,25589,716,452,1373
+9,ISS-usability-ui_layout_redesign,Unpopular Interface Redesigns,usability,9984,23045,2.308193,23045,1519,141,2099
+10,ISS-playback-playback_other,Other Playback Problems,playback,6238,21257,3.407663,21257,469,2987,1750
+11,ISS-catalog-missing_or_removed_content,Missing or Removed Music,catalog,6079,18264,3.004442,18264,518,309,998
+12,ISS-catalog-lyrics,Lyrics Missing or Not Loading,catalog,5417,16061,2.964925,16061,223,13,565
+13,ISS-playback-device_integration,Device and Playback Integration Issues,playback,4653,14568,3.130883,14568,628,741,721
+14,ISS-billing-premium_price,Premium Value and Cost,billing,6721,13785,2.051034,13785,946,4,1117
+15,ISS-playback-connection_error,Connection and Network Errors,playback,3647,12691,3.479846,12691,209,1777,545
+16,ISS-playback-lag_slow_or_freeze,Slow or Frozen App,playback,3915,12147,3.102682,12147,312,467,627
+17,ISS-usability-usability_other,Other Usability Problems,usability,4249,10801,2.542010,10801,451,92,959
+18,ISS-catalog-search_discovery,Search and Content Discovery Problems,catalog,3173,9484,2.988969,9484,230,187,566
+19,ISS-catalog-recommendations_repetitive,Repetitive or Poor Recommendations,catalog,3278,9434,2.877974,9434,275,4,630
+20,ISS-billing-subscription_activation,Premium Not Activating Properly,billing,2304,7810,3.389757,7810,158,885,401
+21,ISS-downloads-offline_mode,Downloaded Music Fails Offline,downloads,2170,7386,3.403687,7386,133,914,258
+22,ISS-downloads-download_failure,Downloads Fail or Incomplete,downloads,2026,6397,3.157453,6397,78,363,406
+23,ISS-billing-billing_other,Other Billing Problems,billing,2448,5669,2.315768,5669,341,60,568
+24,ISS-playback-audio_quality,Poor Audio Quality,playback,1912,5170,2.703975,5170,136,73,347
+25,ISS-billing-charges_refunds,Incorrect Charges and Refunds,billing,1084,4753,4.384686,4753,164,803,160
+26,ISS-catalog-catalog_other,Other Catalog Problems,catalog,1529,4290,2.805755,4290,84,155,358
+27,ISS-downloads-downloads_disappearing,Downloads Disappear,downloads,1082,3814,3.524954,3814,97,321,171
+28,ISS-access-account_lost_or_hacked,Lost or Compromised Accounts,access,680,3131,4.604412,3131,63,633,149
+29,ISS-other-unrelated_or_political,Political or Unrelated Complaints,other,2025,3123,1.542222,3123,1048,1,297
+30,ISS-catalog-podcasts_audiobooks,Podcast and Audiobook Issues,catalog,1012,2910,2.875494,2910,102,86,158
+31,ISS-access-access_other,Other Access Problems,access,785,2765,3.522293,2765,59,437,288
+32,ISS-playback-battery_resource_use,High Resource and Data Use,playback,912,2632,2.885965,2632,88,38,194
+33,ISS-access-unexpected_logout,Unexpected Logouts,access,728,2594,3.563187,2594,47,394,119
+34,ISS-other-other_misc,Miscellaneous Feedback,other,1176,2582,2.195578,2582,244,85,690
+35,ISS-access-signup_verification,Signup and Verification Failures,access,498,1843,3.700803,1843,26,371,75
+36,ISS-downloads-downloads_other,Other Download and Storage Issues,downloads,459,1301,2.834423,1301,24,12,114
+37,ISS-support-support_unresponsive,Support Is Hard to Reach,support,281,799,2.843416,799,38,18,48
+38,ISS-support-support_other,Other Support Concerns,support,165,399,2.418182,399,17,7,45
+39,ISS-other-general_positive,General Positive Feedback,other,236,255,1.080508,255,200,0,41

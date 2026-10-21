@@ -47,6 +47,19 @@ def main():
     log = [json.loads(l) for l in open(st / "run_log.jsonl")]
     enr = [e for e in log if e["stage"] in ("enrich_start", "enrich_end")]
     inv = [e for e in log if e["stage"] == "enrich_end"]
+    starts = [e for e in log if e["stage"] == "enrich_start"]
+    ends = [e for e in log if e["stage"] == "enrich_end"]
+    segs = []
+    for i, s0 in enumerate(starts):
+        nxt = ts(starts[i + 1]["ts"]) if i + 1 < len(starts) else None
+        end = next((e for e in ends if ts(e["ts"]) >= ts(s0["ts"]) and (nxt is None or ts(e["ts"]) <= nxt)), None)
+        if end:
+            stop, how = ts(end["ts"]), end.get("stop_reason") or "queue_empty_or_limit"
+        else:
+            stop = max(ts(c["ts"]) for c in calls if ts(c["ts"]) >= ts(s0["ts"]) and (nxt is None or ts(c["ts"]) < nxt))
+            how = "process killed (no end record); end = last logged call start"
+        segs.append({"phase": s0["phase"], "start": s0["ts"], "pending_at_start": s0["pending"], "workers": s0["workers"],
+                     "wall_s": round((stop - ts(s0["ts"])).total_seconds(), 1), "end": how})
     errors = Counter((c.get("error") or "").split(":")[0] for c in calls if c["outcome"] != "succeeded")
     db = connect(st)
     work = dict(db.execute("SELECT status, COUNT(*) FROM work GROUP BY status").fetchall())
@@ -63,9 +76,11 @@ def main():
            "input_tokens": sum(b["input_tokens"] for b in by.values()), "output_tokens": sum(b["output_tokens"] for b in by.values()),
            "api_cost_usd": round(total_cost, 4), "cost_note": "computed from logged provider usage x rates in config.json (standard tier); not a provider invoice",
            "enrich_invocations": [{k: e.get(k) for k in ("phase", "elapsed_s", "batches", "stop_reason", "spent_usd", "work_status")} for e in inv],
-           "enrich_wall_seconds_sum": round(sum(e["elapsed_s"] for e in inv), 1),
+           "enrich_wall_seconds_sum": round(sum(x["wall_s"] for x in segs), 1),
+           "enrich_invocation_wall_clock": segs,
            "first_call": calls[0]["ts"], "last_call": calls[-1]["ts"],
-           "wall_hours": round(sum(e["elapsed_s"] for e in inv) / 3600, 3),
+           "wall_hours": round(sum(x["wall_s"] for x in segs) / 3600, 3),
+           "wall_note": "sum of enrichment invocation wall-clock (start log -> end log, or -> last logged call for the invocation killed without an end record); includes time the laptop was asleep",
            "span_hours_first_to_last_call": round((last - first).total_seconds() / 3600, 3),
            "distinct_text_status": work, "quarantine_reasons": reasons}
     write_json(st / "run_summary.json", out)
