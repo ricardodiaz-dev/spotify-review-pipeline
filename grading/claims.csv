@@ -1,11 +1,9 @@
 claim_id,issue_id,metric,value
-C001,ISS-other-general_negative,complaint_count,79391
-C002,ISS-other-general_negative,mean_severity,1.988210
 C003,ISS-other-general_negative,priority_score,157846
 C004,ISS-billing-free_tier_restrictions,complaint_count,48031
 C005,ISS-billing-free_tier_restrictions,mean_severity,2.928255
 C006,ISS-billing-free_tier_restrictions,priority_score,140647
+C007,ISS-usability-ads_interruptions,complaint_count,36257
 C009,ISS-usability-ads_interruptions,priority_score,77273
-C012,ISS-usability-controls_shuffle_skip,priority_score,44091
 C015,ISS-playback-playback_stops_or_skips,priority_score,37795
 C018,ISS-access-login_failure,priority_score,28532

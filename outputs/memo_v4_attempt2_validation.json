@@ -1,0 +1,25 @@
+{
+  "attempts": 2,
+  "cited_claims": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C006",
+    "C007",
+    "C009",
+    "C010",
+    "C012",
+    "C015",
+    "C018",
+    "C022",
+    "C024"
+  ],
+  "input_key": "4dcab05ee008ebe9ece5a6acd12650a37deeaaedc7d30ee5a4c80eb1144fc236",
+  "problems": [
+    "citation [A1] is not next to a number",
+    "citation [A2] is not next to a number",
+    "citation [A3] is not next to a number"
+  ],
+  "status": "review_required"
+}

@@ -1,19 +1,42 @@
 {
-  "attempts": 1,
+  "status": "pass",
+  "problems": [],
   "cited_claims": [
-    "C001",
-    "C002",
     "C003",
     "C004",
     "C005",
     "C006",
+    "C007",
     "C009",
-    "C012",
     "C015",
     "C018"
   ],
-  "input_key": "e513506651bd23e405fe76142b627114d07ccccafa0b6ddd151cd7f7abbe5a4f",
-  "problems": [],
-  "status": "pass",
-  "revalidated_note": "re-checked with grouped-citation parser; memo text unchanged"
+  "memo_file": "outputs/memo.md",
+  "provenance": "plain-language human edit of AI memo-v3 (outputs/memo_v3.md); conclusion, numbers and citations kept",
+  "checks": [
+    "every cited id exists in claims/facts",
+    "every number matches an allowed saved value",
+    "every review_id is from the evidence pack",
+    "every citation sits next to a number"
+  ],
+  "memo_sha256": "f29951acea4623429882b735216a6e6a029704ead12d84c6e98cd98464af04b6",
+  "ai_source_validation": {
+    "attempts": 1,
+    "cited_claims": [
+      "C001",
+      "C002",
+      "C003",
+      "C004",
+      "C005",
+      "C006",
+      "C009",
+      "C012",
+      "C015",
+      "C018"
+    ],
+    "input_key": "e513506651bd23e405fe76142b627114d07ccccafa0b6ddd151cd7f7abbe5a4f",
+    "problems": [],
+    "status": "pass",
+    "revalidated_note": "re-checked with grouped-citation parser; memo text unchanged"
+  }
 }

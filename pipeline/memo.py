@@ -18,7 +18,7 @@ TOP_ISSUES = 12
 EVIDENCE_ISSUES = 6
 EVIDENCE_PER_ISSUE = 3
 UUID = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}")
-REF_GROUP = re.compile(r"\[((?:C\d{3}|A\d+)(?:\s*,\s*(?:C\d{3}|A\d+))*)\]")
+REF_GROUP = re.compile(r"\[((?:C\d{3}|A\d+[a-z]?)(?:\s*,\s*(?:C\d{3}|A\d+[a-z]?))*)\]")
 
 
 class _Refs:
@@ -56,6 +56,8 @@ def build_inputs(state_dir):
     total_c = agg["complaint_or_cancellation"]
     facts.append({"fact_id": "A1", "fact": "completed classified reviews", "display": fmt_int(agg["completed"])})
     facts.append({"fact_id": "A2", "fact": "complaint or cancellation reviews in issue groups", "display": fmt_int(total_c)})
+    facts.append({"fact_id": "A2b", "fact": "number of issues in the ranking", "display": str(agg["issues"])})
+    facts.append({"fact_id": "A2c", "fact": "source reviews analysed (May 2022 - Nov 2023)", "display": fmt_int(sum(agg["record_status"].values()))})
     q = agg["record_status"].get("quarantined", 0)
     facts.append({"fact_id": "A3", "fact": "reviews quarantined or unresolved (includes any empty texts)", "display": fmt_int(q)})
     k = 4
@@ -155,6 +157,11 @@ def check(memo, claims, facts, evidence):
     for n in NUM.findall(stripped):
         if n not in ok and n.rstrip(".,") not in ok:
             problems.append(f"unsupported number {n}")
+    # every citation must follow the number it supports (no bare citations)
+    for m in REF_GROUP.finditer(memo):
+        before = UUID.sub(" ", memo[max(0, m.start() - 80):m.start()])
+        if not re.search(r"\d", before):
+            problems.append(f"citation [{m.group(1)}] is not next to a number")
     # claim display values must sit next to the claim cited
     for c in claims:
         if f"[{c['claim_id']}]" in memo and c["display"] not in memo:

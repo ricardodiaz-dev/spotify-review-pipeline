@@ -1,30 +1,53 @@
-## Recommendation
+## The answer in one sentence
 
-Prioritise **billing/support**, beginning with `ISS-billing-free_tier_restrictions` (Free-Tier Feature Restrictions). Make the first workstream a review of free-tier limits and their in-product explanation; pair it with diagnosis of the remaining billing/support complaints before committing to additional fixes. The evidence identifies one billing/support issue in detail, so it does not support naming two more specific issue-level fixes.
+**Next quarter, Spotify should focus on billing and support, starting with the limits on the free plan, because complaints about them grew fastest at the end of the review period.**
 
-This recommendation differs from the historical area priority-score ranking: usability ranks highest overall. Billing/support is the better next-quarter bet because its share of classified complaints is much higher at the end of the review window than in the comparison window. Treat that rise as an association in self-selected reviews, not evidence that product changes caused it.
+## What we looked at
 
-## Why
+- **660,622** Google Play reviews from May 2022 to November 2023 [A2c]. An AI model labeled **660,555** of them [A1]: what each review is about, whether it is a complaint, and how serious it is on a scale of 1 to 5.
+- We kept the complaints, **293,810** reviews [A2], and grouped them into **39** issues [A2b], such as "Unable to Log In" or "Free-Tier Feature Restrictions".
+- Each issue gets a **priority score**: number of complaints × average seriousness. A bigger score means more people with bigger problems.
 
-Under the required baseline—priority score equals complaint count multiplied by mean severity—the highest-ranked issue is `ISS-other-general_negative` (General Negative Feedback): 79,391 complaints [C001], mean severity 1.99 [C002], and priority score 157,846 [C003]. This broad category has the highest issue score, but does not point to a specific fix. Among actionable named issues, `ISS-billing-free_tier_restrictions` (Free-Tier Feature Restrictions) scores 140,647 [C006], on 48,031 complaints [C004] with mean severity 2.93 [C005].
+## The four options, side by side
 
-At area level, usability ranks highest by priority score at 180,799 [A32], ahead of billing/support at 173,862 [A38]. Usability also has more complaints: 73,854 [A30] versus 61,034 [A36]. But the end-of-window trend favors billing/support: in Aug-Oct 2022, it accounted for 3,415 complaints, or 4.0% of 85,236 completed classified reviews [A11, A16, A17]; in Aug-Oct 2023, it accounted for 34,414 complaints, or 21.4% of 161,173 completed classified reviews [A20, A25, A26]. Usability’s share was 11.1% of 85,236 reviews in the earlier period [A11, A14], and 12.4% of 161,173 in the later period [A20, A23]. This supports investigating billing/support now, while recognizing that different denominators and self-selection limit interpretation.
+| Area | Complaints | Average seriousness (1–5) | Priority score | Share of all reviews, Aug–Oct 2022 → Aug–Oct 2023 |
+|---|---:|---:|---:|---|
+| **Billing / support** ✅ | 61,034 [A36] | 2.85 [A39] | 173,862 [A38] | **4.0% [A16] → 21.4% [A25]**, rising fast |
+| Usability (ads, controls, layout) | 73,854 [A30] | 2.45 [A33] | 180,799 [A32], the highest | 11.1% [A14] → 12.4% [A23], flat |
+| Playback (crashes, music stopping) | 45,694 [A48] | 3.31 [A51] | 151,374 [A50] | 7.5% [A12] → 5.1% [A21], falling |
+| Access (login) | 9,912 [A60] | 3.92 [A63], the most serious | 38,865 [A62] | 1.1% [A18] → 2.0% [A27], small rise |
 
-The free-tier issue has substantial volume and higher mean severity than broad general negativity. Representative reviews describe limits on selecting, repeating, and listening to playlist songs; they signal friction around access to core listening features, not merely dissatisfaction with pricing.
+Trend shares compare all classified reviews in each period: 85,236 in Aug–Oct 2022 [A11] and 161,173 in Aug–Oct 2023 [A20]. November 2023 is left out because it is a partial month [A29].
 
-## Alternatives considered
+## Why billing / support wins
 
-- **Usability:** Baseline area priority-score leader, with 73,854 complaints [A30] and 180,799 priority score [A32]. `ISS-usability-ads_interruptions` (Frequent Ad Interruptions) has a priority score of 77,273 [C009], and `ISS-usability-controls_shuffle_skip` (Shuffle and Playback Controls) scores 44,091 [C012]. Reconsider usability if targeted work on these issues is more feasible or if subsequent evidence shows billing/support’s recent share was transient.
-- **Playback:** Has the highest area mean severity among these areas at 3.31 [A51], and 15,691 severity 4-5 complaints [A52]. Yet its share fell from 7.5% of 85,236 reviews [A11, A12] to 5.1% of 161,173 reviews [A20, A21]. `ISS-playback-playback_stops_or_skips` (Playback Stops or Skips) scores 37,795 [C015]. Keep reliability work in view, but the trend argues against making it the primary area.
-- **Access:** Severe when it occurs: mean severity 3.92 [A63], with 8,686 severity 4-5 complaints [A64]. Its share moved from 1.1% of 85,236 reviews [A11, A18] to 2.0% of 161,173 [A20, A27]. `ISS-access-login_failure` (Unable to Log In) scores 28,532 [C018]. Prioritise if operational monitoring indicates a broader access incident.
+1. **It is growing fastest.** Billing and support complaints went from 4.0% of reviews [A16] a year earlier to 21.4% of reviews [A25] by Aug–Oct 2023. The question is what to do *now*, at the end of the period, so the recent direction matters most. Over the whole period usability's score of 180,799 [A32] is slightly higher than billing/support's 173,862 [A38], but usability is not growing.
+2. **It contains the biggest fixable issue.** `ISS-billing-free_tier_restrictions` (Free-Tier Feature Restrictions) has 48,031 complaints [C004], an average seriousness of 2.93 [C005] and a priority score of 140,647 [C006]. The only issue with a higher score is `ISS-other-general_negative` (General Negative Feedback, e.g. "worst app") at 157,846 [C003], which does not point to anything specific to fix.
+3. **What customers are saying.** Free users say they can no longer choose songs, repeat songs or avoid shuffle, and that basic listening now requires Premium (`84300454-6a70-40f5-89bc-f9818dd4076d`, `cba5ab8b-0bbb-45b8-8925-b6d843d12d42`).
 
-## Evidence
+**Suggested first step:** review the free-plan limits and how clearly the app explains them, then look into the rest of the billing and support complaints.
 
-- `84300454-6a70-40f5-89bc-f9818dd4076d` — objects that many features now require Premium.
-- `cba5ab8b-0bbb-45b8-8925-b6d843d12d42` — describes losing song selection and repeat controls.
-- `5785e125-8b06-4318-acbd-f215ba170fe8` — reports unwanted shuffle and difficulty playing a chosen playlist.
-- `47a1557c-36e8-4e7a-9b72-0a940c2ec715` — describes repeated login failure and inaccessible saved music.
+## Why not the others?
 
-## Limitations
+- **Usability** has the highest score over the whole period, 180,799 [A32], driven by `ISS-usability-ads_interruptions` (Frequent Ad Interruptions) with 36,257 complaints [C007] and a priority score of 77,273 [C009]. But its share of reviews barely moved, 11.1% [A14] to 12.4% [A23], and its problems are milder on average, 2.45 [A33]. It is the runner-up, and the better choice if the billing spike turns out to be temporary.
+- **Playback** problems are serious when they happen: 15,691 complaints were rated 4 or 5 [A52], such as the app not opening or music not playing. The top playback issue, `ISS-playback-playback_stops_or_skips` (Playback Stops or Skips), has a priority score of 37,795 [C015]. But playback is a shrinking share of reviews, 7.5% [A12] to 5.1% [A21]. Keep fixing reliability, just not as the main focus.
+- **Access** (login) is the most serious per complaint, 3.92 [A63], but involves far fewer people, 9,912 complaints [A60]. `ISS-access-login_failure` (Unable to Log In) has a priority score of 28,532 [C018]. Make it the priority only if there is a sudden login outage.
 
-These are self-selected historical public reviews, not a representative customer sample. Model labels have measured error: verifier topic agreement was 84.1% [A5], intent agreement 91.4% [A6], and severity exact agreement 88.4% [A7]; golden-set topic agreement was 78.0% [A8] and severity mean absolute error was 0.24 [A10]. Cancellation language is stated intent, not observed churn. There is no revenue or plan data. The records include 67 quarantined or unresolved items, including empty texts [A3]. The Aug-Oct comparison excludes partial 2023-11 [A29].
+## Evidence (example reviews)
+
+- `84300454-6a70-40f5-89bc-f9818dd4076d`: says the app used to be good, but now everything needs Premium.
+- `cba5ab8b-0bbb-45b8-8925-b6d843d12d42`: describes losing the ability to pick songs and repeat them unless they pay.
+- `188599a2-694a-4a3a-9c38-ea94f2d12cae`: music stops playing after an ad ends.
+- `c30e8e8f-0790-4d25-b6a1-8f451285dc95`: music will not play even after reinstalling the app.
+- `47a1557c-36e8-4e7a-9b72-0a940c2ec715`: cannot log in with a phone number after many tries.
+
+## What to keep in mind
+
+- These are **public app-store reviews**. People who write reviews tend to be unhappy, so they do not represent all users.
+- The labels come from an AI model that is usually, but not always, right. It agreed with hand labels on the topic 78.0% of the time [A8], and with a second, independent AI check 84.1% of the time [A5].
+- Someone saying "I'm cancelling" is not proof they actually cancelled.
+- There is no revenue or subscription data, so this says nothing about money lost.
+- The rise in billing complaints happened *at the same time* as the free-plan changes customers describe. That is consistent with those changes being the cause, but it does not prove it.
+- 67 reviews could not be classified, including empty ones [A3].
+
+*How this memo was made: the pipeline's memo role (AI, prompt `memo-v3`) wrote [`memo_v3.md`](memo_v3.md) from saved numbers only. A person then rewrote it in plain language, keeping the conclusion, every number and every citation. The same code checks were rerun on this text: every citation exists, every number matches a saved value, and every review ID is from the evidence pack. Results are in `memo_validation.json`. The dashboard shows the original AI-generated text.*

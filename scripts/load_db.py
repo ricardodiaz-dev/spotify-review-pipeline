@@ -93,6 +93,10 @@ def main():
             db.execute("INSERT INTO spotify.monthly_trend VALUES (%s,%s)", (m["month"], json.dumps(m)))
         db.execute("INSERT INTO spotify.memo VALUES (1,%s,%s,%s)", ((st / "memo.md").read_text(),
                    (st / "memo_validation.json").read_text(), (st / "memo_input.json").read_text()))
+        plain = ROOT / "outputs" / "memo.md"
+        if plain.exists() and (ROOT / "outputs" / "memo_validation.json").exists():
+            db.execute("INSERT INTO spotify.memo VALUES (2,%s,%s,%s)", (plain.read_text(),
+                       (ROOT / "outputs" / "memo_validation.json").read_text(), (st / "memo_input.json").read_text()))
         for c in csv.DictReader(open(st / "claims_all.csv")):
             db.execute("INSERT INTO spotify.claims VALUES (%s,%s,%s,%s,%s,%s)",
                        (c["claim_id"], c["issue_id"], c["issue_name"], c["metric"], c["value"], c["display"]))
