@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | **Live dashboard** | **https://spotify-review-insights-pi.vercel.app**. Public, no login. Vercel serverless backend → Neon Postgres. Viewing it never calls a model. |
-| **Decision memo** | [`outputs/memo.md`](outputs/memo.md); claims in [`grading/claims.csv`](grading/claims.csv) |
+| **Decision memo** | [`outputs/memo.md`](outputs/memo.md) (official, with claim IDs); claims in [`grading/claims.csv`](grading/claims.csv); [plain-language version](outputs/memo_plain_language.md) |
 | **Grading export** | [`grading/`](grading/) (checker output: [`outputs/self-check.json`](outputs/self-check.json)) |
 | **Cost calculator** | [`cost/`](cost/): run `python3 cost/calculator.py` (offline by default) |
 | **Dataset** | [Course ZIP (Google Drive)](https://drive.google.com/file/d/1P0rUoAS_wVjp3BYKqXMEyD4u0uJP1Bvf/view). `spotify_reviews_18months.csv`, 97,400,616 bytes, SHA-256 `1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6`. Not committed; place it at `data/spotify_reviews_18months.csv`. |
